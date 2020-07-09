@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="text-center">
+      <br />
+      <br />
+      <h2 className="display-4">Cost effective animated</h2>
+      
+      <h2 className="display-4"> videos for your business.</h2>
+
+      <br />
+
+      <span className="lead font-weight-normal">We work with businesses to improve </span>
+      <br />
+      <span className="lead font-weight-normal">their social media marketing with animated videos.</span>
+      <br />
+      <br />
+
+      <button className="btn btn-primary">Start a Project</button>
     </div>
   );
 }
