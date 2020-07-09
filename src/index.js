@@ -26,6 +26,7 @@ function Navbar(){
         <a className="py-2 d-none d-md-inline-block text-dark" href="#">Pricing</a>
         <a className="py-2 d-none d-md-inline-block text-dark" href="#">About Us</a>
         <a className="py-2 d-none d-md-inline-block text-dark" href="#">Contact</a>
+        <a className="py-2 d-none d-md-inline-block text-dark" href="#">Login</a>
 
       </div>
     </nav>

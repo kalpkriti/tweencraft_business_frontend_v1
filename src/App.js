@@ -19,6 +19,16 @@ function App() {
       <br />
 
       <button className="btn btn-primary">Start a Project</button>
+    
+    <div className="carousel slide" data-ride= "carousel">
+      <ol className="carousel-indicators">
+        <li data-target = "#" className="active"></li>
+        <li></li>
+        <li></li>
+
+      </ol>
+
+    </div>
     </div>
   );
 }
