@@ -1,0 +1,115 @@
+/* Burger House Califor */
+
+.heading{
+
+/*position: absolute;
+left: 35.28%;
+right: 35.28%;
+top: 5.67%;
+bottom: 90.77%;
+*/
+
+font-family: Mart;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+/* or 150% */
+text-align: center;
+letter-spacing: 0.4px;
+
+color: #28272B;
+margin: 5px 5px;
+
+}
+
+.small-text{
+
+    /* Burger Menu */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: 0.4px;
+text-transform: uppercase;
+
+color: #28272B;
+
+mix-blend-mode: normal;
+opacity: 0.6;
+
+}
+
+#dropdown-basic{
+    /* Rectangle 48 */
+
+width: 424px;
+height: 60px;
+left: 508px;
+top: 341px;
+    
+background: #FFFFFF;
+border: 1px solid rgba(40, 39, 43, 0.1);
+box-sizing: border-box;
+box-shadow: 0px 2px 6px rgba(40, 39, 43, 0.06);
+border-radius: 10px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+letter-spacing: 0.4px;
+
+color: rgba(40, 39, 43, 0.8);
+
+}
+
+#dropdown-basic:hover, #dropdown-basic:focus, #dropdown-basic:active{
+    /* Rectangle 48 */
+
+width: 424px;
+height: 60px;
+left: 508px;
+top: 341px;
+    
+background: #f7f7f7;
+border: 1px solid rgba(40, 39, 43, 0.1);
+box-sizing: border-box;
+box-shadow: 0px 2px 6px rgba(40, 39, 43, 0.06);
+border-radius: 10px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+letter-spacing: 0.4px;
+
+color: rgba(40, 39, 43, 0.8);
+
+}
+
+.drop-item:active{
+    background-color:#e0e0e0;
+}
+
+.tab{
+    /* bgr */
+
+background: #FF784B;
+border-radius: 5px;
+padding: 8px 15px;
+
+}
+
+.tab:hover{
+    cursor: pointer;
+    background: #fd865e;
+}
