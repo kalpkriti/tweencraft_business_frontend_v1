@@ -96,6 +96,10 @@ color: rgba(40, 39, 43, 0.8);
 
 }
 
+.drop-item{
+    width: 424px;
+}
+
 .drop-item:active{
     background-color:#e0e0e0;
 }
@@ -113,3 +117,80 @@ padding: 8px 15px;
     cursor: pointer;
     background: #fd865e;
 }
+
+.active-tab{
+    text-decoration: underline;
+    color:  #FF784B;
+    padding: 2rem;
+}
+
+.small-tab-text{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    
+    /* identical to box height, or 100% */
+    letter-spacing: 0.4px;
+
+    color: #000000;
+
+    opacity: 0.6;
+
+}
+
+.small-tab-text:hover{
+
+    color:black ;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #FF784B;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+#carousel1{
+
+    width: 60%;
+    
+}
+
+#tabs1{
+
+    visibility: hidden;
+    height: 0%;
+    width: 100%;
+}
+
+#tabs2{
+    visibility: visible;
+    block-size: 100%;
+}
+
+
+@media (max-width: 800px){
+    #carousel1{
+        width: 100%;
+    }
+    #tabs1{
+        visibility: visible;
+        height: 100%;
+    }
+    #tabs2{
+        visibility: hidden;
+        height: 0%;
+    }
+}
+
+@media (max-width: 454px){
+
+    #dropdown-basic, #dropdown-basic:hover, #dropdown-basic:focus, #dropdown-basic:active{
+        width: 80%;
+    }
+
+}
+
+
+

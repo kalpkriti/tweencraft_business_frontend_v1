@@ -1,6 +1,7 @@
 import React from 'react';
-import {Dropdown, Nav} from 'react-bootstrap';
+import {Dropdown, Image} from 'react-bootstrap';
 import './style.css';
+import Tweenpic from "./static/image.png";
 
 export default function Sample(){
     return(
@@ -30,9 +31,9 @@ export default function Sample(){
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1" className="drop-item">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2" className="drop-item">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3" className="drop-item">Something else</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1" className="drop-item">English</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2" className="drop-item">Hindi</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3" className="drop-item">Marathi</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 <br />
@@ -45,6 +46,11 @@ export default function Sample(){
                     <a className="lead font-weight-normal" style={{margin:"2rem"}}>Automotive</a>
                     <a className="lead font-weight-normal" style={{margin:"2rem"}}>Electronics</a>
                 </div>
+                <br />
+                <div>
+                    <Image src = {Tweenpic}></Image>
+                </div>
+
             </center>
         </div>
     );

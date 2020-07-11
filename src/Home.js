@@ -1,72 +1,45 @@
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
+import {Carousel, Nav, Dropdown} from 'react-bootstrap';
+import Image from "./static/image.png";
+import './style.css'
 
 function Home() {
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center my-5">
+       
         <br />
-        <br />
-        <h2 className="display-4">Cost effective animated</h2>
-        
-        <h2 className="display-4"> videos for your business.</h2>
+        <div className="container mx-auto">
+          <h2 className="heading">Cost effective animated videos for your business.</h2>
+        </div>
 
         <br />
+        <div className="container mx-auto">
+          <h3 className="lead font-weight-normal">We work with businesses to improve </h3>
+          <h3 className="lead font-weight-normal">their social media marketing with animated videos.</h3>
+        </div>
 
-        <h3 className="lead font-weight-normal">We work with businesses to improve </h3>
-        <h3 className="lead font-weight-normal">their social media marketing with animated videos.</h3>
         <br />
         
         <button className="btn btn-primary btn-lg" style={{backgroundColor:"#FF784B", border:"none"}}>Start a Project</button>
-        <br />
-        <br />
-        <br />
+        
+        <div className="container">
 
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Grocery</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Restaurant</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Spa & Salon</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Retail</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Home Decor</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Automotive</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Electronics</a>
-        <br />
+          <Tabs />
+
+        </div>
         <br />
 
         <center>
           <div>
-                  <Carousel style = {{width: "60%", height: "20%"}}>
-                <Carousel.Item>
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" className="d-block w-100" alt="#"/>
-                        
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item >
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" className="d-block w-100" alt="#"/>
-
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" className="d-block w-100" alt="#"/>
-
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+            <ControlledCarousel />
           </div>
         </center>
 
         <br />
   
-        <h2 className="display-4">Use tweencraft to drive growth</h2>
-        <h2 className="display-4">at your business</h2>
+        <h2 className="heading">Use tweencraft to drive growth</h2>
+        <h2 className="heading">at your business</h2>
         
       </div>
       <br />
@@ -94,3 +67,85 @@ function Home() {
 }
 
 export default Home;
+
+function OldNav(){
+  return (
+    <div>
+    <span className="lead font-weight-normal active-tab">Grocery</span>
+        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Restaurant</a>
+        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Spa & Salon</a>
+        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Retail</a>
+        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Home Decor</a>
+        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Automotive</a>
+        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Electronics</a>
+    </div>
+  )
+}
+
+function ControlledCarousel(){
+
+  return (
+    <Carousel id="carousel1" controls={false}>
+                <Carousel.Item>
+                  <img src={Image} className="d-block w-100" alt="#"/>
+                          
+                </Carousel.Item>
+                <Carousel.Item >
+                  <img src={Image} className="d-block w-100" alt="#"/>
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={Image} className="d-block w-100" alt="#"/>
+
+                </Carousel.Item>
+            </Carousel>
+  );
+}
+
+function Tabs(){
+
+  return(
+    <div>
+      <div id="tabs1">
+          <br />
+          <Dropdown>
+          <Dropdown.Toggle id="dropdown-basic">
+              Grocery
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1" className="drop-item">Restaurant</Dropdown.Item>
+              <Dropdown.Item href="#/action-2" className="drop-item">Spa & Salon</Dropdown.Item>
+              <Dropdown.Item href="#/action-3" className="drop-item">Retail</Dropdown.Item>
+              <Dropdown.Item href="#/action-1" className="drop-item">Home Decor</Dropdown.Item>
+              <Dropdown.Item href="#/action-2" className="drop-item">Automotive</Dropdown.Item>
+              <Dropdown.Item href="#/action-3" className="drop-item">Electronics</Dropdown.Item>
+          </Dropdown.Menu>
+          </Dropdown>
+      </div>
+      <div id="tabs2">
+      <Nav fill variant="tabs" defaultActiveKey="#">
+            <Nav.Item>
+              <Nav.Link href="#" className="small-tab-text">Grocery</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-2" className="small-tab-text">Restaurant</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-3" className="small-tab-text">Spa & Salon</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-4" className="small-tab-text">Retail</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-5" className="small-tab-text">Automotive</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-6" className="small-tab-text">Electronics</Nav.Link>
+            </Nav.Item>
+          </Nav>
+          </div>
+          
+        </div>
+  );
+}
