@@ -12,7 +12,7 @@ bottom: 90.77%;
 font-family: Mart;
 font-style: normal;
 font-weight: 600;
-font-size: 40px;
+font-size: 35px;
 line-height: 60px;
 /* or 150% */
 text-align: center;
@@ -107,7 +107,7 @@ color: rgba(40, 39, 43, 0.8);
 .tab{
     /* bgr */
 
-background: #FF784B;
+background-color: #FF784B;
 border-radius: 5px;
 padding: 8px 15px;
 
@@ -116,6 +116,10 @@ padding: 8px 15px;
 .tab:hover{
     cursor: pointer;
     background: #fd865e;
+}
+
+.tab:active{
+    background-color: #fd865e;
 }
 
 .active-tab{
@@ -136,7 +140,7 @@ padding: 8px 15px;
 
     color: #000000;
 
-    opacity: 0.6;
+    opacity: 0.8;
 
 }
 
@@ -190,6 +194,31 @@ padding: 8px 15px;
         width: 80%;
     }
 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: rgb(255, 255, 255);
+    background-color: #ff5a23;
+}
+
+.jumbotron{
+    background-image: url(./static/ad.png);
+    margin: 5%;
+}
+
+.small-orange-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.4px;
+
+    color: #FF784B;
+
+    mix-blend-mode: normal;
 }
 
 

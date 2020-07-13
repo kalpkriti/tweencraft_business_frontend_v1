@@ -2,6 +2,7 @@ import React from 'react';
 import {Carousel, Nav, Dropdown} from 'react-bootstrap';
 import Image from "./static/image.png";
 import './style.css'
+import {LowMod, CustMod} from './Mods';
 
 function Home() {
   return (
@@ -44,19 +45,11 @@ function Home() {
       </div>
       <br />
       <br />
-      <div className="px-lg-5">
-        <span style={{fontSize:"2rem"}}>
-         Low cost animated videos 
-        </span>
-        <br />
-        <span style={{fontSize:"2rem"}}>
-          for your business.
-        </span>
-        <br />
-        <br />
-        <span className="text-dark ">
-        Using animated videos helps improve the reach and engagement for your social media ads.
-        </span>
+      <div className="container">
+      
+        <LowMod />
+        <CustMod />
+      
 
       </div>
 
