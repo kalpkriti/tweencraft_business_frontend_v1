@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './Routes.js';
+import Footer from './Footer';
 import {Navbar, Nav} from 'react-bootstrap';
 
 
@@ -8,6 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BootNav />
     <Routes />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -63,8 +65,8 @@ function BootNav(){
           <Nav.Link href="#pricing" className="mx-4">About Us</Nav.Link>
           <Nav.Link href="#pricing" className="mx-4">Contact</Nav.Link>
         </Nav>
-          <Nav.Link href="#home">Login</Nav.Link>
-          <Nav.Link href="#features">|  +91-7022756420</Nav.Link>
+          <Nav.Link href="#home" className="text-dark">Login</Nav.Link>
+          <Nav.Link href="#features" className="text-dark">|  +91-7022756420</Nav.Link>
         </Navbar.Collapse>
     </Navbar>
   )

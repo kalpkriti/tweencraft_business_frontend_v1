@@ -203,6 +203,7 @@ padding: 8px 15px;
 
 .jumbotron{
     background-image: url(./static/ad.png);
+    background-color: #e9f0fa;
     margin: 5%;
 }
 

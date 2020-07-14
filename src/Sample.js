@@ -2,6 +2,7 @@ import React from 'react';
 import {Dropdown, Image, Nav, Button} from 'react-bootstrap';
 import './style.css';
 import Tweenpic from "./static/image.png";
+import Vid from "./static/movie.mp4";
 import ad from "./static/ad.png";
 import { CustMod } from './Mods';
 
@@ -45,7 +46,12 @@ export default function Sample(){
                 </div>
                 <br />
                 <div>
-                    <Image src = {Tweenpic} style={{height:"60%", width:"60%", margin: "10px 10px"}}></Image>
+                    <video width="60%" height="60%" autoPlay loop>
+                    <source src={Vid} type="video/mp4" />
+                    
+                    Your browser does not support the video tag.
+
+                    </video>
                 </div>
 
                 <div className="my-5">
@@ -61,7 +67,7 @@ export default function Sample(){
 
                 <br />
 
-                <div className="jumbotron container">
+                <div className="jumbotron container" style={{blockSize:"100%"}}>
                     <div className="row text-left">
                         <div className="col-sm-8">
                             
@@ -88,7 +94,8 @@ export default function Sample(){
                             <br/>
                             <div className="my-2">
                             <span >
-                                Already a member ? Log In
+                                Already a member?
+                                <a href="#" className="text-dark">Log In</a>
                             </span>
                             </div>
                         </div>

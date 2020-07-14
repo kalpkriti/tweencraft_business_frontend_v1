@@ -1,8 +1,10 @@
 import React from 'react';
-import {Carousel, Nav, Dropdown} from 'react-bootstrap';
-import Image from "./static/image.png";
+import {Carousel, Nav, Dropdown, Image, Button, Modal} from 'react-bootstrap';
+import Img from "./static/image.png";
 import './style.css'
+import Vid from "./static/movie.mp4";
 import {LowMod, CustMod} from './Mods';
+import { useState } from 'react';
 
 function Home() {
   return (
@@ -44,18 +46,12 @@ function Home() {
         
       </div>
       <br />
-      <br />
-      <div className="container">
-      
-        <LowMod />
-        <CustMod />
-      
-
+      <div className="text-center my-4 py-4">    
+      <CustMod />
       </div>
-
-      
-
+      <br />
     </div>
+    
   );
 }
 
@@ -77,21 +73,56 @@ function OldNav(){
 
 function ControlledCarousel(){
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <Carousel id="carousel1" controls={false}>
-                <Carousel.Item>
-                  <img src={Image} className="d-block w-100" alt="#"/>
+    <div>
+    <Carousel id="carousel1" controls={false} indicators={false}>
+                <Carousel.Item >
+                  
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
                           
                 </Carousel.Item>
                 <Carousel.Item >
-                  <img src={Image} className="d-block w-100" alt="#"/>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
 
                 </Carousel.Item>
                 <Carousel.Item>
-                  <img src={Image} className="d-block w-100" alt="#"/>
+
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
+                    <Image src = {Img} onClick={handleShow} style={{height:"25%", width:"20%", margin: "5px 5px"}}></Image>
 
                 </Carousel.Item>
             </Carousel>
+
+            <Modal show={show} onHide={handleClose} size="xl" aria-labelledby="contained-modal-title-vcenter" centered>
+            <Modal.Header closeButton>
+              
+            </Modal.Header>
+            <Modal.Body>
+
+              <video width="100%" height="100%" controls autoPlay>
+                <source src={Vid} type="video/mp4" />
+                
+                Your browser does not support the video tag.
+
+              </video>
+
+            </Modal.Body>
+            </Modal>
+
+            </div>
   );
 }
 
