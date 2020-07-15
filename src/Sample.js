@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dropdown, Image, Nav, Button} from 'react-bootstrap';
+import {Dropdown, Image, Nav, Button, Form, FormControl} from 'react-bootstrap';
 import './style.css';
 import Tweenpic from "./static/image.png";
 import Vid from "./static/movie.mp4";
@@ -26,6 +26,7 @@ export default function Sample(){
                 </span>
 
                 <br />
+                
                 <br />
 
                 <Dropdown>
@@ -39,6 +40,9 @@ export default function Sample(){
                         <Dropdown.Item href="#/action-3" className="drop-item">Marathi</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
+
+                <br />
+                
                 <br />
                 <div className="container">
                     <TabPills />

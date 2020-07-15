@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './Routes.js';
 import Footer from './Footer';
-import {Navbar, Nav} from 'react-bootstrap';
+import Search from './Search';
+import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
 
 
 ReactDOM.render(
@@ -64,9 +65,10 @@ function BootNav(){
           <Nav.Link href="#pricing" className="mx-4">Pricing</Nav.Link>
           <Nav.Link href="#pricing" className="mx-4">About Us</Nav.Link>
           <Nav.Link href="#pricing" className="mx-4">Contact</Nav.Link>
+          
         </Nav>
+          <Search />
           <Nav.Link href="#home" className="text-dark">Login</Nav.Link>
-          <Nav.Link href="#features" className="text-dark">|  +91-7022756420</Nav.Link>
         </Navbar.Collapse>
     </Navbar>
   )
