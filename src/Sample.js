@@ -14,8 +14,35 @@ var arr = ['General Shop',
   'Covid Safety',
   'Digital Marketing']
 
+var lang = "Hindi";
+var cate = "Education";
 
 export default function Sample(){
+
+    const fetchLang = (selectedKey) => {
+        
+        console.log(selectedKey);
+        lang = selectedKey;
+        var drop = document.getElementById('dropdown-basic');
+        drop.innerText = lang;
+
+        axios.post('http://52.66.132.209:5000/getSampleVideos', {
+            "language": lang,
+            "category": cate
+        }).then((response)=>{
+            console.log(selectedKey);
+            var video = document.getElementById('video');
+            var source = document.getElementById('source');
+            source.setAttribute('src', response.data.data.videos[0].url);
+            
+            video.load()
+            
+        }).catch((err) => {
+            console.log(err);
+    
+        })
+    }
+
     return(
         <div>
             <br />
@@ -38,15 +65,14 @@ export default function Sample(){
                 
                 <br />
 
-                <Dropdown>
+                <Dropdown onSelect={fetchLang} >
                     <Dropdown.Toggle id="dropdown-basic">
                         Select Video Language
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1" className="drop-item">English</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2" className="drop-item">Hindi</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3" className="drop-item">Marathi</Dropdown.Item>
+                        <Dropdown.Item eventKey="English" className="drop-item">English</Dropdown.Item>
+                        <Dropdown.Item eventKey="Hindi" className="drop-item">Hindi</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 
@@ -92,10 +118,11 @@ function TabPills(){
 
     const fetch = (selectedKey) => {
        
+        cate = selectedKey;
 
         axios.post('http://52.66.132.209:5000/getSampleVideos', {
-            "language": "",
-            "category": selectedKey
+            "language": lang,
+            "category": cate
         }).then((response)=>{
             console.log(selectedKey);
             var video = document.getElementById('video');
