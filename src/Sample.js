@@ -2,9 +2,18 @@ import React from 'react';
 import {Dropdown, Image, Nav, Button, Form, FormControl} from 'react-bootstrap';
 import './style.css';
 import Tweenpic from "./static/image.png";
-import Vid from "./static/movie.mp4";
 import ad from "./static/ad.png";
 import { CustMod } from './Mods';
+import Ad from './Ad';
+import axios from 'axios';
+
+var arr = ['General Shop',
+  'Insurance',
+  'Jewellery',
+ 'Miscellaneous',
+  'Covid Safety',
+  'Digital Marketing']
+
 
 export default function Sample(){
     return(
@@ -50,8 +59,9 @@ export default function Sample(){
                 </div>
                 <br />
                 <div>
-                    <video width="60%" height="60%" autoPlay loop>
-                    <source src={Vid} type="video/mp4" />
+                    <video width="60%" height="60%" autoPlay loop controls id="video">
+                    
+                    <source src="https://tweencraftcrm.s3.ap-south-1.amazonaws.com/samples/1594873289381_teacher_Project28_2020_06_30_1.mp4" type="video/mp4" id="source" />
                     
                     Your browser does not support the video tag.
 
@@ -71,40 +81,7 @@ export default function Sample(){
 
                 <br />
 
-                <div className="jumbotron container" style={{blockSize:"100%"}}>
-                    <div className="row text-left">
-                        <div className="col-sm-8">
-                            
-                            <span className="mx-5 px-1 small-orange-text">
-                                Want to discuss with us.
-                            </span>
-                            
-                        </div>
-                        <div className="col-sm">
-                            
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-8 px-5">
-                            <span className="heading">
-                            Tell us what you need, We'll tell you the best way for an animated video.
-                            </span>
-                        </div>
-                        <div className="col-sm my-2">
-                            <button className="btn btn-primary btn-lg" style={{backgroundColor:"#FF784B", border:"none"}}>
-                                Schedule a Call
-                            </button>
-
-                            <br/>
-                            <div className="my-2">
-                            <span >
-                                Already a member?
-                                <a href="#" className="text-dark">Log In</a>
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Ad />
 
             </center>
         </div>
@@ -112,27 +89,48 @@ export default function Sample(){
 }
 
 function TabPills(){
+
+    const fetch = (selectedKey) => {
+       
+
+        axios.post('http://52.66.132.209:5000/getSampleVideos', {
+            "language": "",
+            "category": selectedKey
+        }).then((response)=>{
+            console.log(selectedKey);
+            var video = document.getElementById('video');
+            var source = document.getElementById('source');
+            source.setAttribute('src', response.data.data.videos[0].url);
+            
+            video.load()
+            
+        }).catch((err) => {
+            console.log(err);
+    
+        })
+    }
     return(
 
-    <Nav fill variant="pills" defaultActiveKey="#">
+    <Nav fill variant="pills" defaultActiveKey="#" onSelect={fetch}>
         <Nav.Item>
-            <Nav.Link href="#" className="small-tab-text">Grocery</Nav.Link>
+            <Nav.Link eventKey="Digital_Marketing" className="small-tab-text">Digital Marketing</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="link-2" className="small-tab-text">Restaurant</Nav.Link>
+            <Nav.Link eventKey="Education" className="small-tab-text">Education</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="link-3" className="small-tab-text">Spa & Salon</Nav.Link>
+            <Nav.Link eventKey="Insurance" className="small-tab-text">Insurance</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="link-4" className="small-tab-text">Retail</Nav.Link>
+            <Nav.Link eventKey="General_Shop" className="small-tab-text">General Shop</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="link-5" className="small-tab-text">Automotive</Nav.Link>
+            <Nav.Link eventKey="Jewellery" className="small-tab-text">Jewellery</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="link-6" className="small-tab-text">Electronics</Nav.Link>
+            <Nav.Link eventKey="Miscellaneous" className="small-tab-text">Miscellaneous</Nav.Link>
         </Nav.Item>
     </Nav>
   )
 }
+

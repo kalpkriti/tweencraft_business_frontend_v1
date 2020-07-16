@@ -2,9 +2,16 @@ import React from 'react';
 import {Carousel, Nav, Dropdown, Image, Button, Modal} from 'react-bootstrap';
 import Img from "./static/image.png";
 import './style.css'
-import Vid from "./static/movie.mp4";
 import {LowMod, CustMod} from './Mods';
 import { useState } from 'react';
+
+var arr = ['General Shop',
+  'Insurance',
+  'Jewellery',
+ 'Miscellaneous',
+  'Covid Safety',
+  'Digital Marketing']
+
 
 function Home() {
   return (
@@ -57,19 +64,6 @@ function Home() {
 
 export default Home;
 
-function OldNav(){
-  return (
-    <div>
-    <span className="lead font-weight-normal active-tab">Grocery</span>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Restaurant</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Spa & Salon</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Retail</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Home Decor</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Automotive</a>
-        <a className="lead font-weight-normal" style={{padding:"2rem"}}>Electronics</a>
-    </div>
-  )
-}
 
 function ControlledCarousel(){
 
@@ -113,7 +107,7 @@ function ControlledCarousel(){
             <Modal.Body>
 
               <video width="100%" height="100%" controls autoPlay>
-                <source src={Vid} type="video/mp4" />
+                <source src="https://tweencraftcrm.s3.ap-south-1.amazonaws.com/samples/1594873289381_teacher_Project28_2020_06_30_1.mp4" type="video/mp4" />
                 
                 Your browser does not support the video tag.
 
@@ -127,6 +121,12 @@ function ControlledCarousel(){
 }
 
 function Tabs(){
+
+  const listItems = arr.map((name) =>
+        <Nav.Item>
+          <Nav.Link href={"/category?name="+ name} className="small-tab-text">{name}</Nav.Link>
+        </Nav.Item>
+        );
 
   return(
     <div>
@@ -149,24 +149,7 @@ function Tabs(){
       </div>
       <div id="tabs2">
       <Nav fill variant="tabs" defaultActiveKey="#">
-            <Nav.Item>
-              <Nav.Link href="#" className="small-tab-text">Grocery</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-2" className="small-tab-text">Restaurant</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-3" className="small-tab-text">Spa & Salon</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-4" className="small-tab-text">Retail</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-5" className="small-tab-text">Automotive</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-6" className="small-tab-text">Electronics</Nav.Link>
-            </Nav.Item>
+            {listItems}
           </Nav>
           </div>
           
