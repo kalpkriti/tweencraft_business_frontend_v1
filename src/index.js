@@ -69,6 +69,7 @@ function BootNav(){
         </Nav>
           <Search />
           <Nav.Link href="#home" className="text-dark">Login</Nav.Link>
+          <Nav.Link href="#home" className="text-dark">+918744032032</Nav.Link>
         </Navbar.Collapse>
     </Navbar>
   )
