@@ -4,6 +4,7 @@ import Home from './Home.js';
 import Sample from './Sample.js';
 import HowItWorks from './HowItWorks.js';
 import Recipe from './Recipe.js';
+import Pricing from './Pricing';
 
 export default function Routes(){
     return(
@@ -12,7 +13,7 @@ export default function Routes(){
                 <Route exact path='/' component={Home}></Route> 
                 <Route exact path='/sample' component={Sample}></Route> 
                 <Route exact path='/how-it-works' component={HowItWorks}></Route> 
-                <Route exact path='/pricing' component={Home}></Route> 
+                <Route exact path='/pricing' component={Pricing}></Route> 
                 <Route exact path='/recipe' component={Recipe}></Route> 
             </Switch>
         </Router>

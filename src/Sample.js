@@ -29,7 +29,9 @@ export default function Sample(){
         axios.post('http://52.66.132.209:5000/getSampleVideos', {
             "language": lang,
             "category": cate
+
         }).then((response)=>{
+
             console.log(selectedKey);
             var video = document.getElementById('video');
             var source = document.getElementById('source');
@@ -38,6 +40,7 @@ export default function Sample(){
             video.load()
             
         }).catch((err) => {
+            
             console.log(err);
     
         })
@@ -46,7 +49,7 @@ export default function Sample(){
     return(
         <div>
             <br />
-            <br />
+            
                 <div className="text-center small-text">
                     Sample
                 </div>

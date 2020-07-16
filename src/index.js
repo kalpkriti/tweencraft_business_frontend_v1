@@ -33,7 +33,7 @@ function NavOld(){
       
           <a className="py-2 d-none d-md-inline-block text-dark" href="/sample">Samples</a> 
           <a className="py-2 d-none d-md-inline-block text-dark" href="/how-it-works">How it Works</a>
-          <a className="py-2 d-none d-md-inline-block text-dark" href="#">Pricing</a>
+          <a className="py-2 d-none d-md-inline-block text-dark" href="">Pricing</a>
           <a className="py-2 d-none d-md-inline-block text-dark" href="#">About Us</a>
           <a className="py-2 d-none d-md-inline-block text-dark" href="#">Contact</a>
           <a className="py-2 d-none d-md-inline-block text-dark" href="#">Login</a>
@@ -62,7 +62,7 @@ function BootNav(){
         <Nav className="mx-auto">
           <Nav.Link href="/sample" className="mx-4">Sample</Nav.Link>
           <Nav.Link href="/how-it-works" className="mx-4">How it Works</Nav.Link>
-          <Nav.Link href="#pricing" className="mx-4">Pricing</Nav.Link>
+          <Nav.Link href="/pricing" className="mx-4">Pricing</Nav.Link>
           <Nav.Link href="#pricing" className="mx-4">About Us</Nav.Link>
           <Nav.Link href="#pricing" className="mx-4">Contact</Nav.Link>
           
