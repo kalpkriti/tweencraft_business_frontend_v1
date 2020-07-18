@@ -204,7 +204,7 @@ padding: 8px 15px;
 .jumbotron{
     background-image: url(./static/ad.png);
     background-color: #e9f0fa;
-    margin: 5%;
+    background-repeat: no-repeat;
 }
 
 .small-orange-text{
@@ -222,5 +222,35 @@ padding: 8px 15px;
     mix-blend-mode: normal;
 }
 
+#bgimg{
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0) -0.31%, #FFFFFF 73.02%), url(./static/back.png);
+    
+    mix-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
+#white{
+    color:white;
+}
 
+#contact{
+    background-image: url(./static/bg.png);
+    background-color: #f0f5ff;
+}
+
+#footer-head{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+letter-spacing: 0.4px;
+
+color: #28272B;
+
+mix-blend-mode: normal;
+}

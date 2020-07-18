@@ -1,6 +1,7 @@
 import React from 'react';
 import works from './static/works.png';
 import Ad from './Ad';
+import './style.css';
 
 export default function HowItWorks(){
     return (
@@ -20,7 +21,7 @@ export default function HowItWorks(){
                 Tweencraft works
                 <br />
                 
-                <img src={works} style={{height:"50%", width:"50%"}} className="my-4 py-4"/>
+                <img src={works} className="my-4 py-4" id="carousel1"/>
 
                 
                 </div>

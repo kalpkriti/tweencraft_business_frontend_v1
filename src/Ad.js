@@ -3,7 +3,7 @@ import React from 'react';
 export default function Ad(){
     return(
 
-    <div className="jumbotron container" style={{blockSize:"100%"}}>
+    <div className="jumbotron container">
                     <div className="row text-left">
                         <div className="col-sm-8">
                             
@@ -17,7 +17,7 @@ export default function Ad(){
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-8 px-5">
+                        <div className="col-lg px-auto">
                             <span className="heading">
                             Tell us what you need, We'll tell you the best way for an animated video.
                             </span>

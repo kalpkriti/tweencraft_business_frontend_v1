@@ -14,7 +14,7 @@ export function LowMod(){
 export function CustMod(){
     return(
         <div>
-      <img src={Testi} style={{height:"70%", width:"70%", margin:"10px 20px"}} />
+      <img src={Testi} id="carousel1" />
       
 
       </div>

@@ -6,6 +6,7 @@ import ad from "./static/ad.png";
 import { CustMod } from './Mods';
 import Ad from './Ad';
 import axios from 'axios';
+import Play from './static/play.png'
 
 var arr = ['General Shop',
   'Insurance',
@@ -87,8 +88,8 @@ export default function Sample(){
 
                 </div>
                 <br />
-                <div>
-                    <video width="60%" height="60%" autoPlay loop controls id="video">
+                <div className="container">
+                    <video width="100%" height="60%" autoPlay loop controls id="video">
                     
                     <source src="https://tweencraftcrm.s3.ap-south-1.amazonaws.com/samples/1594873289381_teacher_Project28_2020_06_30_1.mp4" type="video/mp4" id="source" />
                     
@@ -98,10 +99,10 @@ export default function Sample(){
                 </div>
 
                 <div className="my-5">
-                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "10px 10px"}}></Image>
-                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "10px 10px"}}></Image>
-                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "10px 10px"}}></Image>
-                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "10px 10px"}}></Image>
+                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "1% 1%"}}></Image>
+                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "1% 1%"}}></Image>
+                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "1% 1%"}}></Image>
+                    <Image src = {Tweenpic} style={{height:"15%", width:"15%", margin: "1% 1%"}}></Image>
                 </div>
 
                 <br />

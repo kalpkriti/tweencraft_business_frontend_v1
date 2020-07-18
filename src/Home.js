@@ -4,29 +4,33 @@ import Img from "./static/image.png";
 import './style.css'
 import {LowMod, CustMod} from './Mods';
 import { useState } from 'react';
+import {Headings} from './Pricing';
+import Cards from './PriceCard';
+import HowItWorks from './HowItWorks';
+import {BootNavWhite} from './index';
 
-var arr = ['General Shop',
+var arr = [
   'Insurance',
   'Jewellery',
  'Miscellaneous',
   'Covid Safety',
-  'Digital Marketing']
+  'Education']
 
 
 function Home() {
   return (
     <div>
-      <div className="text-center my-5">
+      <div className="text-center py-2" id="bgimg">
+        <BootNavWhite />
        
-        <br />
-        <div className="container mx-auto">
-          <h2 className="heading">Cost effective animated videos for your business.</h2>
+        <div className="container mx-auto py-5">
+          <h2 className="heading" id="white">Cost effective animated videos for your business.</h2>
         </div>
 
         <br />
         <div className="container mx-auto">
-          <h3 className="lead font-weight-normal">We work with businesses to improve </h3>
-          <h3 className="lead font-weight-normal">their social media marketing with animated videos.</h3>
+          <h3 className="lead font-weight-normal" id="white">We work with businesses to improve </h3>
+          <h3 className="lead font-weight-normal" id="white">their social media marketing with animated videos.</h3>
         </div>
 
         <br />
@@ -47,16 +51,28 @@ function Home() {
         </center>
 
         <br />
-  
-        <h2 className="heading">Use tweencraft to drive growth</h2>
-        <h2 className="heading">at your business</h2>
+
         
       </div>
+
+      <div className="text-center small-text" >
+          Features
+        </div>
+        <br />
+        <h2 className="heading" >Use tweencraft to drive growth</h2>
+        <h2 className="heading" >at your business</h2>
+        
       <br />
       <div className="text-center my-4 py-4">    
       <CustMod />
       </div>
       <br />
+
+      <Headings />
+      <br />
+      <Cards />
+      <br />
+      <HowItWorks />
     </div>
     
   );
@@ -124,7 +140,7 @@ function Tabs(){
 
   const listItems = arr.map((name) =>
         <Nav.Item>
-          <Nav.Link href={"/category?name="+ name} className="small-tab-text">{name}</Nav.Link>
+          <Nav.Link href={"/category/"+ name} className="small-tab-text">{name}</Nav.Link>
         </Nav.Item>
         );
 
