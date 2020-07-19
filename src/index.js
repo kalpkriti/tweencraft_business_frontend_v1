@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routes from './Routes.js';
-import Footer from './Footer';
-import Search from './Search';
+import Routes from './routes.js';
+import Footer from './footer';
+import Search from './search';
 import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
 import * as firebase from 'firebase';
 

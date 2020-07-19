@@ -1,6 +1,6 @@
 import React from 'react';
-import {CustMod} from './Mods'
-import Cards from './PriceCard';
+import {CustMod} from './mods'
+import Cards from './price_card';
 
 export default function Pricing(){
 

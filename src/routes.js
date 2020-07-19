@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, useHistory} from 'react-router-dom';
-import Home from './Home.js';
-import Sample from './Sample.js';
-import HowItWorks from './HowItWorks.js';
-import Contact from './Contact';
-import Pricing from './Pricing';
-import AboutUs from './AboutUs';
+import Home from './home.js';
+import Sample from './sample.js';
+import HowItWorks from './how_it_works.js';
+import Contact from './contact';
+import Pricing from './pricing';
+import AboutUs from './about_us';
 import {BootNav} from './index';
-import Category from './Category.js';
+import Category from './category.js';
 
 export default function Routes(){
     

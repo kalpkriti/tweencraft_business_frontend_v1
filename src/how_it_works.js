@@ -1,6 +1,6 @@
 import React from 'react';
 import works from './static/works.png';
-import Ad from './Ad';
+import Ad from './ad';
 import './style.css';
 
 export default function HowItWorks(){

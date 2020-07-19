@@ -2,11 +2,11 @@ import React from 'react';
 import {Carousel, Nav, Dropdown, Image, Button, Modal} from 'react-bootstrap';
 import Img from "./static/image.png";
 import './style.css'
-import {LowMod, CustMod} from './Mods';
+import {LowMod, CustMod} from './mods';
 import { useState } from 'react';
-import {Headings} from './Pricing';
-import Cards from './PriceCard';
-import HowItWorks from './HowItWorks';
+import {Headings} from './pricing';
+import Cards from './price_card';
+import HowItWorks from './how_it_works';
 import {BootNavWhite} from './index';
 
 var arr = [

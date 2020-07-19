@@ -1,8 +1,8 @@
 import React from 'react'
 import {Image} from 'react-bootstrap'
 import Img from './static/illustration.png'
-import {CustMod} from './Mods'
-import Ad from './Ad';
+import {CustMod} from './mods'
+import Ad from './ad';
 
 export default function AboutUs(){
 

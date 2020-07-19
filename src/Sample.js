@@ -3,8 +3,8 @@ import {Dropdown, Image, Nav, Button, Form, FormControl} from 'react-bootstrap';
 import './style.css';
 import Tweenpic from "./static/image.png";
 import ad from "./static/ad.png";
-import { CustMod } from './Mods';
-import Ad from './Ad';
+import { CustMod } from './mods';
+import Ad from './ad';
 import axios from 'axios';
 import Play from './static/play.png'
 
