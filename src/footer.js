@@ -66,7 +66,7 @@ export default function Footer(){
                     <br />
                     +918744032032
                     <br />
-                    ad@tweencraft.com
+                    ad@kalpkriti.com
                     <br />
                     Play Store
                 </div>
