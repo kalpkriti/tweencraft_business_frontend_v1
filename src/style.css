@@ -1,0 +1,257 @@
+/* Burger House Califor */
+
+.heading{
+
+/*position: absolute;
+left: 35.28%;
+right: 35.28%;
+top: 5.67%;
+bottom: 90.77%;
+*/
+
+font-family: Mart;
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 60px;
+/* or 150% */
+text-align: center;
+letter-spacing: 0.4px;
+
+color: #28272B;
+margin: 5px 5px;
+
+}
+
+.small-text{
+
+    /* Burger Menu */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: 0.4px;
+text-transform: uppercase;
+
+color: #28272B;
+
+mix-blend-mode: normal;
+opacity: 0.6;
+
+}
+
+#dropdown-basic{
+    /* Rectangle 48 */
+
+width: 424px;
+height: 60px;
+left: 508px;
+top: 341px;
+    
+background: #FFFFFF;
+border: 1px solid rgba(40, 39, 43, 0.1);
+box-sizing: border-box;
+box-shadow: 0px 2px 6px rgba(40, 39, 43, 0.06);
+border-radius: 10px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+letter-spacing: 0.4px;
+
+color: rgba(40, 39, 43, 0.8);
+
+}
+
+#dropdown-basic:hover, #dropdown-basic:focus, #dropdown-basic:active{
+    /* Rectangle 48 */
+
+width: 424px;
+height: 60px;
+left: 508px;
+top: 341px;
+    
+background: #f7f7f7;
+border: 1px solid rgba(40, 39, 43, 0.1);
+box-sizing: border-box;
+box-shadow: 0px 2px 6px rgba(40, 39, 43, 0.06);
+border-radius: 10px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+letter-spacing: 0.4px;
+
+color: rgba(40, 39, 43, 0.8);
+
+}
+
+.drop-item{
+    width: 424px;
+}
+
+.drop-item:active{
+    background-color:#e0e0e0;
+}
+
+.tab{
+    /* bgr */
+
+background-color: #FF784B;
+border-radius: 5px;
+padding: 8px 15px;
+
+}
+
+.tab:hover{
+    cursor: pointer;
+    background: #fd865e;
+}
+
+.tab:active{
+    background-color: #fd865e;
+}
+
+.active-tab{
+    text-decoration: underline;
+    color:  #FF784B;
+    padding: 2rem;
+}
+
+.small-tab-text{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    
+    /* identical to box height, or 100% */
+    letter-spacing: 0.4px;
+
+    color: #000000;
+
+    opacity: 0.8;
+
+}
+
+.small-tab-text:hover{
+
+    color:black ;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #FF784B;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    text-decoration: underline;
+}
+
+#carousel1{
+
+    width: 60%;
+    
+}
+
+#tabs1{
+
+    visibility: hidden;
+    height: 0%;
+    width: 100%;
+}
+
+#tabs2{
+    visibility: visible;
+    block-size: 100%;
+}
+
+
+@media (max-width: 800px){
+    #carousel1{
+        width: 100%;
+    }
+    #tabs1{
+        visibility: visible;
+        height: 100%;
+    }
+    #tabs2{
+        visibility: hidden;
+        height: 0%;
+    }
+}
+
+@media (max-width: 454px){
+
+    #dropdown-basic, #dropdown-basic:hover, #dropdown-basic:focus, #dropdown-basic:active{
+        width: 80%;
+    }
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: rgb(255, 255, 255);
+    background-color: #ff5a23;
+}
+
+.jumbotron{
+    background-image: url(./static/ad.png);
+    background-color: #e9f0fa;
+    background-repeat: no-repeat;
+}
+
+.small-orange-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.4px;
+
+    color: #FF784B;
+
+    mix-blend-mode: normal;
+}
+
+#bgimg{
+    background: linear-gradient(180deg, rgba(248, 248, 248, 0) -0.31%, #FFFFFF 73.02%), url(./static/back.png);
+    
+    mix-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#white{
+    color:white;
+}
+
+#contact{
+    background-image: url(./static/bg.png);
+    background-color: #f0f5ff;
+}
+
+#footer-head{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+letter-spacing: 0.4px;
+
+color: #28272B;
+
+mix-blend-mode: normal;
+}
