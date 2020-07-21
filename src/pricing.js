@@ -33,7 +33,7 @@ export function Headings(){
             
             <center>
                 <span className=" heading ">
-                Choose tweencraft packages that’s 
+                Choose kalpkriti packages that’s 
                 
                 </span>
                 <br />

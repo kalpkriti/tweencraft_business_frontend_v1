@@ -20,6 +20,9 @@ var cate = "Education";
 
 export default function Sample(){
 
+    var butn = document.getElementsByClassName("small-tab-text")[0];
+    console.log(butn);
+
     const fetchLang = (selectedKey) => {
         
         console.log(selectedKey);
@@ -144,7 +147,7 @@ function TabPills(){
 
     <Nav fill variant="pills" defaultActiveKey="#" onSelect={fetch}>
         <Nav.Item>
-            <Nav.Link eventKey="Digital_Marketing" className="small-tab-text">Digital Marketing</Nav.Link>
+            <Nav.Link eventKey="Digital_Marketing" className="small-tab-text" id="def">Digital Marketing</Nav.Link>
         </Nav.Item>
         <Nav.Item>
             <Nav.Link eventKey="Education" className="small-tab-text">Education</Nav.Link>

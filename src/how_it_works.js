@@ -18,7 +18,7 @@ export default function HowItWorks(){
                 </div>
                 
                 <div className="heading text-center">
-                Tweencraft works
+                Kalpkriti works
                 <br />
                 
                 <img src={works} className="my-4 py-4" id="carousel1"/>

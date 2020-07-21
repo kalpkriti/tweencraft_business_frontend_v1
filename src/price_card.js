@@ -221,7 +221,7 @@ export default function Cards(){
                 </div>
                 <br />
                 
-                <Button className="px-5" style = {{background:"none", borderColor:"#FF784B", color:"#FF784B"}}>Start a Project</Button>
+                <Button className="px-5" style = {{background:"none", borderColor:"#FF784B", color:"#FF784B"}}>Get a quote</Button>
                 
             </Card.Body>
             </Card>

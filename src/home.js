@@ -2,7 +2,7 @@ import React from 'react';
 import {Carousel, Nav, Dropdown, Image, Button, Modal} from 'react-bootstrap';
 import Img from "./static/image.png";
 import './style.css'
-import {LowMod, CustMod} from './mods';
+import {Feature1, CustMod, Feature2, Feature3} from './mods';
 import { useState } from 'react';
 import {Headings} from './pricing';
 import Cards from './price_card';
@@ -10,14 +10,17 @@ import HowItWorks from './how_it_works';
 import {BootNavWhite} from './index';
 
 var arr = [
-  'Insurance',
-  'Jewellery',
- 'Miscellaneous',
-  'Covid Safety',
-  'Education']
+  ['Insurance', 'Insurance'],
+  ['Jewellery', 'Jewellery'],
+ ['Miscellaneous', 'Miscellaneous'],
+  ['Covid_Safety','Covid Safety'],
+  ['Education', 'Education'],
+['Ayurveda', 'Ayurveda']]
 
 
 function Home() {
+
+
   return (
     <div>
       <div className="text-center py-2" id="bgimg">
@@ -35,7 +38,7 @@ function Home() {
 
         <br />
         
-        <button className="btn btn-primary btn-lg" style={{backgroundColor:"#FF784B", border:"none"}}>Start a Project</button>
+        <a className="btn btn-primary btn-lg" href="/startproject" style={{backgroundColor:"#FF784B", border:"none"}}>Start a Project</a>
         
         <div className="container">
 
@@ -59,10 +62,22 @@ function Home() {
           Features
         </div>
         <br />
-        <h2 className="heading" >Use tweencraft to drive growth</h2>
+        <h2 className="heading" >Use kalpkriti to drive growth</h2>
         <h2 className="heading" >at your business</h2>
         
       <br />
+      <div className="container">
+
+        <Feature1 />  
+        <br />
+        <br />
+        <Feature2 />
+        <br />
+        <br />
+        <Feature3 />
+      </div>
+       
+
       <div className="text-center my-4 py-4">    
       <CustMod />
       </div>
@@ -140,8 +155,9 @@ function Tabs(){
 
   const listItems = arr.map((name) =>
         <Nav.Item>
-          <Nav.Link href={"/category/"+ name} className="small-tab-text">{name}</Nav.Link>
+          <Nav.Link href={"/category/"+ name[0]} className="small-tab-text">{name[1]}</Nav.Link>
         </Nav.Item>
+        
         );
 
   return(
@@ -154,18 +170,21 @@ function Tabs(){
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1" className="drop-item">Restaurant</Dropdown.Item>
-              <Dropdown.Item href="#/action-2" className="drop-item">Spa & Salon</Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="drop-item">Retail</Dropdown.Item>
-              <Dropdown.Item href="#/action-1" className="drop-item">Home Decor</Dropdown.Item>
-              <Dropdown.Item href="#/action-2" className="drop-item">Automotive</Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="drop-item">Electronics</Dropdown.Item>
+              <Dropdown.Item href="/category/Insurance" className="drop-item">Insurance</Dropdown.Item>
+              <Dropdown.Item href="/category/Jewellery" className="drop-item">Jewellery</Dropdown.Item>
+              <Dropdown.Item href="/category/Education" className="drop-item">Education</Dropdown.Item>
+              <Dropdown.Item href="/category/Covid_Safety" className="drop-item">Covid Safety</Dropdown.Item>
+              <Dropdown.Item href="/category/Miscellaneous" className="drop-item">Miscellaneous</Dropdown.Item>
+              <Dropdown.Item href="/category/Digital_Marketing" className="drop-item">Digital Marketing</Dropdown.Item>
           </Dropdown.Menu>
           </Dropdown>
       </div>
       <div id="tabs2">
       <Nav fill variant="tabs" defaultActiveKey="#">
             {listItems}
+            <Nav.Item>
+          <Nav.Link href="/sample" className="small-tab-text">View all</Nav.Link>
+        </Nav.Item>
           </Nav>
           </div>
           

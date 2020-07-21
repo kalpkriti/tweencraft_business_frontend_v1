@@ -8,6 +8,8 @@ import Pricing from './pricing';
 import AboutUs from './about_us';
 import {BootNav} from './index';
 import Category from './category.js';
+import StartProject from './start_project';
+import View from './view';
 
 export default function Routes(){
     
@@ -39,6 +41,14 @@ export default function Routes(){
                 <Route exact path='/category/:name'>
                     <BootNav />
                     <Category /> 
+                </Route> 
+                <Route exact path='/startproject'>
+                    <BootNav />
+                    <StartProject /> 
+                </Route> 
+                <Route exact path='/view/:cate/:id'>
+                    <BootNav />
+                    <View /> 
                 </Route> 
             </Switch>
         </Router>
