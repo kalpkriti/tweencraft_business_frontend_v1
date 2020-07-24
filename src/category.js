@@ -14,7 +14,7 @@ const Category = () => {
 
   useEffect(async () => {
     const response = await axios.post(
-      "http://52.66.132.209:5000/getSampleVideos",
+      "https://52.66.132.209:5001/getSampleVideos",
       { category: name.name }
     );
     console.log(response.data.data.videos, "asasa");
@@ -69,6 +69,8 @@ const Category = () => {
       <div className="container">
 
         {/* <h1>{videos && videos.map(v => v.videoName)}</h1> */}
+
+        {videos && videos.map((v) => <h1>{v.data.data.videoName}</h1> )}
 
         {listItems}
         

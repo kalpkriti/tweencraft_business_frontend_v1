@@ -22,6 +22,7 @@ export default function Sample(){
 
     var butn = document.getElementsByClassName("small-tab-text")[0];
     console.log(butn);
+    
 
     const fetchLang = (selectedKey) => {
         
@@ -127,7 +128,7 @@ function TabPills(){
        
         cate = selectedKey;
 
-        axios.post('http://52.66.132.209:5000/getSampleVideos', {
+        axios.post('https://52.66.132.209:5001/getSampleVideos', {
             "language": lang,
             "category": cate
         }).then((response)=>{
