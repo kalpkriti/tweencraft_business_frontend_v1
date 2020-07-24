@@ -107,7 +107,7 @@ color: rgba(40, 39, 43, 0.8);
 .tab{
     /* bgr */
 
-background-color: #FF784B;
+background-color: #D1DB2A;
 border-radius: 5px;
 padding: 8px 15px;
 
@@ -115,16 +115,16 @@ padding: 8px 15px;
 
 .tab:hover{
     cursor: pointer;
-    background: #fd865e;
+    background: #D1DB2A;
 }
 
 .tab:active{
-    background-color: #fd865e;
+    background-color: #D1DB2A;
 }
 
 .active-tab{
     text-decoration: underline;
-    color:  #FF784B;
+    color:  #D1DB2A;
     padding: 2rem;
 }
 
@@ -149,11 +149,16 @@ padding: 8px 15px;
     color:black ;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #FF784B;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
-    text-decoration: underline;
+
+/* .cust1, .cust1:hover{
+    color:blue;
+} */
+.cust1:active, .cust1:focus{
+    color: #D1DB2A;
+    
+    border-style: none none solid;
+    border-width: 1.6px;
+    border-color: #D1DB2A;
 }
 
 #carousel1{
@@ -199,7 +204,7 @@ padding: 8px 15px;
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: rgb(255, 255, 255);
-    background-color: #ff5a23;
+    background-color: #D1DB2A;
 }
 
 .jumbotron{
@@ -218,7 +223,7 @@ padding: 8px 15px;
 
     letter-spacing: 0.4px;
 
-    color: #FF784B;
+    color: #D1DB2A;
 
     mix-blend-mode: normal;
 }

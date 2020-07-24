@@ -23,7 +23,7 @@ export default function Ad(){
                             </span>
                         </div>
                         <div className="col-sm my-2">
-                            <button className="btn btn-primary btn-lg" style={{backgroundColor:"#FF784B", border:"none"}}>
+                            <button className="btn btn-primary btn-lg" style={{backgroundColor:"#D1DB2A", border:"none"}}>
                                 Schedule a Call
                             </button>
 

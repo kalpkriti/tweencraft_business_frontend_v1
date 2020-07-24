@@ -1,5 +1,6 @@
 import React from 'react';
 import {Form, Card, Button} from 'react-bootstrap'; 
+import axios from 'axios';
 
 export default function StartProject(){
 
@@ -7,6 +8,12 @@ export default function StartProject(){
     var lname = React.createRef();
     var phn = React.createRef();
     var purp = React.createRef();
+    const handleOnSubmit = () => {
+        console.log(fname.current.value);
+        console.log(lname.current.value);
+        console.log(phn.current.value);
+        console.log(purp.current.value);
+    }
 
     return(
         <div className="container" >
@@ -18,17 +25,17 @@ export default function StartProject(){
 
                     
                     <Form>
-                        <Form.Control type="text" placeholder="First Name" />
+                        <Form.Control type="text" placeholder="First Name" ref={fname}/>
                         <br />
-                        <Form.Control type="text" placeholder="Last Name" />
+                        <Form.Control type="text" placeholder="Last Name" ref={lname} />
                         <br />
-                        <Form.Control type="text" placeholder="Phone Number" />
+                        <Form.Control type="text" placeholder="Phone Number" ref={phn}/>
                         <br />
-                        <Form.Control as="textarea" rows="3" placeholder="Purpose" />
+                        <Form.Control as="textarea" rows="3" placeholder="Purpose" ref={purp}/>
                         <br />
                     </Form>
 
-                    <Button className="px-5" style = {{background:"#FF784B", borderColor:"#FF784B", color:"white", width:"100%"}}>Start a Project</Button>
+                    <Button className="px-5" onClick={handleOnSubmit} style = {{background:"#D1DB2A", borderColor:"#D1DB2A", color:"white", width:"100%"}}>Start a Project</Button>
 
                 </Card.Body>
             </Card>

@@ -26,8 +26,8 @@ export default function Cards(){
                 <div className = "">
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -39,8 +39,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -52,8 +52,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                        <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                        <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                        <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                        <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -65,8 +65,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -76,7 +76,7 @@ export default function Cards(){
                 </div>
                 <br />
                 
-                <Button className="px-5" style = {{background:"none", borderColor:"#FF784B", color:"#FF784B"}}>Start a Project</Button>
+                <Button className="px-5" style = {{background:"none", borderColor:"#D1DB2A", color:"#D1DB2A"}}>Start a Project</Button>
                 
             </Card.Body>
             </Card>
@@ -99,8 +99,8 @@ export default function Cards(){
                 <div className = "">
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -112,8 +112,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -125,8 +125,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                        <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                        <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                        <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                        <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -138,8 +138,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -149,7 +149,7 @@ export default function Cards(){
                 </div>
                 <br />
                 
-                <Button className="px-5" style = {{background:"none", borderColor:"#FF784B", color:"#FF784B"}}>Start a Project</Button>
+                <Button className="px-5" style = {{background:"none", borderColor:"#D1DB2A", color:"#D1DB2A"}}>Start a Project</Button>
                 
             </Card.Body>
             </Card>
@@ -171,8 +171,8 @@ export default function Cards(){
                 <div className = "">
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -184,8 +184,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -197,8 +197,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                        <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                        <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                        <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                        <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -210,8 +210,8 @@ export default function Cards(){
                 <div>
                 
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-1">
-                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="#0048D5" stroke-width="1.6"/>
-                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="#0048D5" stroke-width="1.6" stroke-linecap="round"/>
+                    <rect x="0.8" y="0.8" width="18.4" height="18.4" rx="9.2" stroke="black" stroke-width="1.6"/>
+                    <path d="M5.38464 10.0001L7.89629 12.7908C8.04011 12.9506 8.28452 12.9681 8.44968 12.8305L14.6154 7.69238" stroke="black" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
 
                     <span className = "mx-2">
@@ -221,7 +221,7 @@ export default function Cards(){
                 </div>
                 <br />
                 
-                <Button className="px-5" style = {{background:"none", borderColor:"#FF784B", color:"#FF784B"}}>Get a quote</Button>
+                <Button className="px-5" style = {{background:"none", borderColor:"#D1DB2A", color:"#D1DB2A"}}>Get a quote</Button>
                 
             </Card.Body>
             </Card>
