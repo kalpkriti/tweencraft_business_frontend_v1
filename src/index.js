@@ -78,7 +78,6 @@ export function BootNav() {
             Contact
           </Nav.Link>
         </Nav>
-        <Search />
         <Nav.Link href="/login" className="text-dark">
           Login
         </Nav.Link>
@@ -136,14 +135,14 @@ export function BootNavWhite() {
           <Nav.Link href="/pricing" className="mx-4" id="white">
             Pricing
           </Nav.Link>
-          <Nav.Link href="/pricing" className="mx-4" id="white">
+          <Nav.Link href="/aboutus" className="mx-4" id="white">
             About Us
           </Nav.Link>
           <Nav.Link href="/contact" className="mx-4" id="white">
             Contact
           </Nav.Link>
         </Nav>
-        <Search />
+
         <Nav.Link href="/login" id="white">
           Login
         </Nav.Link>

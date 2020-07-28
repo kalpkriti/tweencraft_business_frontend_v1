@@ -59,33 +59,38 @@ function Home() {
     <div>
       <div className="text-center py-2" id="bgimg">
         <BootNavWhite />
-       
-        <div className="container mx-auto py-5">
-          <h2 className="heading" id="white">
+
+        <div className="container mx-auto py-4">
+          <h2 className="heading" style={{ color: "white" }} id="res-head">
             Cost effective animated videos for your business.
           </h2>
         </div>
 
-        <br />
         <div className="container mx-auto">
-          <h3 className="lead font-weight-normal" id="white">
-            We work with businesses to improve{" "}
-          </h3>
-          <h3 className="lead font-weight-normal" id="white">
-            their social media marketing with animated videos.
+          <h3
+            className="lead font-weight-normal"
+            id="white"
+            style={{ marginBottom: "30px" }}
+          >
+            We work with businesses to improve their social media marketing with
+            animated videos.
           </h3>
         </div>
 
         <br />
-        
+
         <a
           className="btn btn-primary btn-lg"
           href="/startproject"
-          style={{ backgroundColor: "#D1DB2A", border: "none" }}
+          style={{
+            backgroundColor: "#D1DB2A",
+            border: "none",
+            borderRadius: "10px",
+          }}
         >
           Start a Project
         </a>
-        
+
         <div className="container">
           <div id="tabs1">
             <br />
@@ -125,30 +130,32 @@ function Home() {
         </center>
 
         <br />
-
-        
       </div>
 
-      <div className="text-center small-text">Features</div>
-        <br />
-        <h2 className="heading" >Use kalpkriti to drive growth</h2>
-        <h2 className="heading" >at your business</h2>
-        
+      <div className="text-center small-text" style={{ marginTop: "50px" }}>
+        Features
+      </div>
+      <br />
+      <h2 className="heading" style={{ marginTop: "30px" }}>
+        Use kalpkriti to drive growth at your business
+      </h2>
+      <br />
+      <br />
       <br />
       <div className="container">
-
-        <Feature1 />  
+        <Feature1 />
         <br />
         <br />
-        <Feature2 />
+        <Feature2 id="res-center" />
         <br />
         <br />
-        <Feature3 />
+        <Feature3 id="res-center" />
       </div>
-       
-
-      <div className="text-center my-4 py-4">    
-      <CustMod />
+      <br />
+      <br />
+      <br />
+      <div className="container">
+        <CustMod />
       </div>
       <br />
 
@@ -158,12 +165,10 @@ function Home() {
       <br />
       <HowItWorks />
     </div>
-    
   );
 }
 
 export default Home;
-
 
 function ControlledCarousel(props) {
   const listCarouselItems = props.vids.map((vid) => (
@@ -186,8 +191,6 @@ function ControlledCarousel(props) {
   return (
     <div>
       <Carousel
-                  
-                          
         id="carousel1"
         controls={false}
         indicators={false}
@@ -200,7 +203,7 @@ function ControlledCarousel(props) {
         <Carousel.Item>{listCarouselItems}</Carousel.Item>
         <Carousel.Item>{listCarouselItems}</Carousel.Item>
         <Carousel.Item>{listCarouselItems}</Carousel.Item>
-            </Carousel>
+      </Carousel>
 
       <Modal
         show={show}
@@ -210,27 +213,18 @@ function ControlledCarousel(props) {
         centered
       >
         <Modal.Header closeButton></Modal.Header>
-              
-            <Modal.Body>
 
-              <video width="100%" height="100%" controls autoPlay>
+        <Modal.Body>
+          <video width="100%" height="100%" controls autoPlay>
             <source src={vidLink} type="video/mp4" />
-                
-                Your browser does not support the video tag.
-
-              </video>
-
-            </Modal.Body>
-            </Modal>
-
-            </div>
+            Your browser does not support the video tag.
+          </video>
+        </Modal.Body>
+      </Modal>
+    </div>
   );
 }
 
-function Tabs(){
+function Tabs() {
   return <div></div>;
-        
-
-
-          
 }
