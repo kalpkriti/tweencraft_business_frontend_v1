@@ -1,27 +1,33 @@
 import React from "react";
-import works from "./static/works.png";
 import Ad from "./ad";
 import "./style.css";
+import Footer from "./footer";
 
 export default function HowItWorks() {
   return (
-    <div>
-      <div className="text-center small-text">
-        <br />
-        <br />
-        How it Works
-      </div>
-      <br />
-      <div className="heading text-center ">How animated video through</div>
+    <div
+      style={{
+        background: "linear-gradient(180deg, #F8F8F8 -0.31%, #FFFFFF 52.09%)",
+        mixBlendMode: "normal",
+        height: "280px",
+      }}
+    >
+      <div className="how-title">How it Works</div>
 
-      <div className="heading text-center">
-        Kalpkriti works
-        <br />
-        <img src={works} className="my-4 py-4" id="carousel1" />
+      <div className="how-head-pos how-head">
+        How animated video through Kalpkriti works
       </div>
+
+      <div className="how-img"></div>
+
       <center>
-        <Ad />
+        <div className="how-ad-pos">
+          <Ad />
+        </div>
       </center>
+      <div className="how-foot">
+        <Footer />
+      </div>
     </div>
   );
 }

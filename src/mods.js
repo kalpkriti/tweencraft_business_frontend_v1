@@ -13,11 +13,8 @@ export function LowMod() {
 
 export function CustMod() {
   return (
-    <div
-      className="row"
-      style={{ display: "flex", flexWrap: "wrap", marginBottom: "50px" }}
-    >
-      <div className="col-lg" style={{ margin: "60px 0px" }}>
+    <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className="col-lg">
         <img src={Testi1} id="testimonial" />
       </div>
       <div
@@ -27,11 +24,7 @@ export function CustMod() {
         <br />
         <br />
         <br />
-        <div
-          className="container"
-          id="testi-1"
-          style={{ width: "100%", marginRight: "200px" }}
-        >
+        <div className="container" id="testi-1" style={{ width: "100%" }}>
           <svg
             width="48"
             height="34"
@@ -41,13 +34,13 @@ export function CustMod() {
           >
             <path
               d="M12.0627 2C11.5733 2 0.0978081 14.851 2.27431 24.5279C4.23196 33.2319 11.7364 32.5492 14.9992 31.1839C16.9568 30.3306 20.6764 26.7807 19.8933 21.4559C18.9145 14.8 13.5309 13.264 11.0838 13.776"
-              stroke="#D1DB2A"
+              stroke="#AAB318"
               stroke-width="3"
               stroke-linecap="round"
             />
             <path
               d="M38.0627 2C37.5733 2 26.0978 14.851 28.2743 24.5279C30.232 33.2319 37.7364 32.5492 40.9992 31.1839C42.9568 30.3306 46.6764 26.7807 45.8933 21.4559C44.9145 14.8 39.5309 13.264 37.0838 13.776"
-              stroke="#D1DB2A"
+              stroke="#AAB318"
               stroke-width="3"
               stroke-linecap="round"
             />
@@ -92,7 +85,7 @@ export function Feature1() {
           xmlns="http://www.w3.org/2000/svg"
           id="res-center"
         >
-          <rect width="50" height="50" rx="20" fill="#D1DB2A" />
+          <rect width="50" height="50" rx="20" fill="#AAB318" />
           <path
             d="M12 21.1872V25.7389C12 25.9971 12.2605 26.2102 12.5768 26.2102H13.8235V20.7095H12.5768C12.2605 20.7095 12 20.9225 12 21.1872Z"
             fill="white"
@@ -116,7 +109,7 @@ export function Feature1() {
           <path
             d="M20.7017 21.2202V13.9558C20.7017 13.14 21.6258 12.6675 22.2871 13.1451L27.3163 16.7773C27.869 17.1764 27.869 17.9995 27.3163 18.3986L22.2872 22.0308C21.6258 22.5085 20.7017 22.0359 20.7017 21.2202Z"
             fill="white"
-            stroke="#D1DB2A"
+            stroke="#AAB318"
             stroke-width="1.6"
             stroke-linecap="round"
           />
@@ -148,7 +141,11 @@ export function Feature1() {
 
 export function Feature2() {
   return (
-    <div className="row" id="res-center">
+    <div
+      className="row"
+      id="res-center"
+      style={{ display: "flex", flexWrap: "wrap-reverse" }}
+    >
       <div className="col mx-2">
         <img src={Illus2} style={{ width: "100%" }} />
       </div>
@@ -175,14 +172,12 @@ export function Feature2() {
         <br />
         <br />
 
-        <span className="heading">
-          Quick turnaround production speed and time
-        </span>
+        <span className="heading">Unbeatable Turnaround</span>
         <br />
         <br />
         <span>
-          Tweencraft allows us to quickly create animated video in just few
-          hours of the timeline.
+          Videos at Kalpkriti are made in a record time. Our process is
+          seamlessly fast. Get your video in just a few days.
         </span>
         <br />
         <br />
@@ -230,13 +225,11 @@ export function Feature3() {
         </svg>
         <br />
         <br />
-        <span className="heading">
-          Mass communication fast and collaborative environment,
-        </span>
+        <span className="heading">Effective communication</span>
         <br />
         <span>
-          Our support and dashboard features that will provide you fast and easy
-          to commniication on your project updates.
+          Our support and dashboard features leaves no room for any
+          communication gap. It keeps you updated at each stage.
         </span>
         <br />
         <br />

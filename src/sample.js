@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Dropdown,
   Image,
@@ -14,6 +14,9 @@ import { CustMod } from "./mods";
 import Ad from "./ad";
 import axios from "axios";
 import Play from "./static/play.png";
+import Search from "./search";
+import Footer from "./footer";
+import { useState } from "react";
 
 var arr = [
   "General Shop",
@@ -28,9 +31,11 @@ var lang = "Hindi";
 var cate = "Education";
 
 export default function Sample() {
-  var butn = document.getElementsByClassName("small-tab-text")[0];
-  console.log(butn);
-
+  useEffect(() => {
+    var ed = document.getElementById("def");
+    console.log(ed);
+    ed.click();
+  }, []);
   const fetchLang = (selectedKey) => {
     console.log(selectedKey);
     lang = selectedKey;
@@ -43,6 +48,7 @@ export default function Sample() {
         category: cate,
       })
       .then((response) => {
+        console.log(response);
         console.log(selectedKey);
         var video = document.getElementById("video");
         var source = document.getElementById("source");
@@ -55,26 +61,78 @@ export default function Sample() {
       });
   };
 
+  const handleShow = (url) => {
+    var video = document.getElementById("video");
+    var source = document.getElementById("source");
+    source.setAttribute("src", url);
+
+    video.load();
+  };
+
+  const [vids, setVids] = useState([]);
+
+  const fetch = (selectedKey) => {
+    cate = selectedKey;
+    console.log(vids);
+    axios
+      .post("https://backend.tweencraft.com:5001/getSampleVideos", {
+        language: lang,
+        category: cate,
+      })
+      .then((response) => {
+        console.log(selectedKey);
+        console.log(response);
+        setVids(response.data.data.videos);
+        var video = document.getElementById("video");
+        var source = document.getElementById("source");
+        source.setAttribute("src", response.data.data.videos[0].url);
+
+        video.load();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    console.log(vids);
+  }, [vids]);
+
+  const listCarouselItems = vids.map((vid) => (
+    <Image
+      src={vid.thumbnail}
+      onClick={() => handleShow(vid.url)}
+      id="sample"
+    />
+  ));
+
   return (
-    <div>
+    <div
+      style={{
+        background: "linear-gradient(180deg, #F8F8F8 -0.31%, #FFFFFF 52.09%)",
+        mixBlendMode: "normal",
+      }}
+    >
       <br />
 
-      <div className="text-center small-text">Sample</div>
+      <div className="small-text sample-pos">Sample</div>
       <br />
-      <center>
-        <span className="heading">Animated Videos for</span>
+      <div className="anim-pos">
+        <span className="anim-style">Animated Videos for</span>
         <br />
-        <span className="heading">every type of business</span>
+        <span className="anim-style">every type of business</span>
+      </div>
 
-        <br />
+      <br />
 
-        <br />
+      <br />
 
+      <div className="search-pos">
+        <Search />
+      </div>
+      <div className="col lang-drop">
         <Dropdown onSelect={fetchLang}>
-          <Dropdown.Toggle id="dropdown-basic">
-            Select Video Language
-          </Dropdown.Toggle>
-
+          <Dropdown.Toggle id="dropdown-basic">Language</Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item eventKey="English" className="drop-item">
               English
@@ -84,27 +142,55 @@ export default function Sample() {
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
+      </div>
+      <div className="col industry-drop">
+        <Dropdown onSelect={fetch}>
+          <Dropdown.Toggle id="dropdown-basic">Industry</Dropdown.Toggle>
 
-        <br />
+          <Dropdown.Menu>
+            <Dropdown.Item eventKey="Education" className="drop-item">
+              Education
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="Insurance" className="drop-item">
+              Insurance
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="Jewellery" className="drop-item">
+              Jewellery
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="Miscellaneous" className="drop-item">
+              Miscellaneous
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="General_Shop" className="drop-item">
+              General Shop
+            </Dropdown.Item>
+            <Dropdown.Item eventKey="Digital_Marketing" className="drop-item">
+              Digital Marketing
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </div>
 
-        <br />
-        <div className="container">
-          <TabPills />
-        </div>
-        <br />
-        <div>
-          <video width="60%" height="60%" autoPlay loop controls id="video">
-            <source
-              src="https://tweencraftcrm.s3.ap-south-1.amazonaws.com/samples/1594873289381_teacher_Project28_2020_06_30_1.mp4"
-              type="video/mp4"
-              id="source"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <br />
 
-        <div className="my-5">
-          {/* <Image
+      <br />
+      <div className="container tabpill-pos">
+        <TabPills fetch={fetch} />
+      </div>
+      <br />
+      <div className="video-pos">
+        <video width="60%" height="60%" loop controls id="video">
+          <source
+            src="https://tweencraftcrm.s3.ap-south-1.amazonaws.com/samples/1594873289381_teacher_Project28_2020_06_30_1.mp4"
+            type="video/mp4"
+            id="source"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div className="thumbs-pos overflow-auto center-text">
+        {listCarouselItems}
+        {/* <Image
             src={Tweenpic}
             style={{ height: "15%", width: "15%", margin: "1% 1%" }}
           ></Image>
@@ -120,49 +206,32 @@ export default function Sample() {
             src={Tweenpic}
             style={{ height: "15%", width: "15%", margin: "1% 1%" }}
           ></Image> */}
-        </div>
+      </div>
 
-        <br />
-        <div className="container-fluid">
-          <CustMod />
-        </div>
+      <br />
+      <div className="container-fluid custmod-pos">
+        <CustMod />
+      </div>
 
-        <br />
-
+      <br />
+      <div className="ad-pos">
         <Ad />
-      </center>
+      </div>
+      <div className="sample-footer">
+        <Footer />
+      </div>
     </div>
   );
 }
 
-function TabPills() {
-  const fetch = (selectedKey) => {
-    cate = selectedKey;
-
-    axios
-      .post("https://backend.tweencraft.com:5001/getSampleVideos", {
-        language: lang,
-        category: cate,
-      })
-      .then((response) => {
-        console.log(selectedKey);
-        var video = document.getElementById("video");
-        var source = document.getElementById("source");
-        source.setAttribute("src", response.data.data.videos[0].url);
-
-        video.load();
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+function TabPills(props) {
   return (
     <div>
       <Nav
         fill
         variant="pills"
         defaultActiveKey="Education"
-        onSelect={fetch}
+        onSelect={props.fetch}
         id="tabs2"
       >
         <Nav.Item>
@@ -175,7 +244,11 @@ function TabPills() {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="Education" className="small-tab-text">
+          <Nav.Link
+            eventKey="Education"
+            className="small-tab-text"
+            id="Education"
+          >
             Education
           </Nav.Link>
         </Nav.Item>
@@ -200,31 +273,6 @@ function TabPills() {
           </Nav.Link>
         </Nav.Item>
       </Nav>
-
-      <Dropdown onSelect={fetch} id="tabs1">
-        <Dropdown.Toggle id="dropdown-basic">Industry</Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item eventKey="Education" className="drop-item">
-            Education
-          </Dropdown.Item>
-          <Dropdown.Item eventKey="Insurance" className="drop-item">
-            Insurance
-          </Dropdown.Item>
-          <Dropdown.Item eventKey="Jewellery" className="drop-item">
-            Jewellery
-          </Dropdown.Item>
-          <Dropdown.Item eventKey="Miscellaneous" className="drop-item">
-            Miscellaneous
-          </Dropdown.Item>
-          <Dropdown.Item eventKey="General_Shop" className="drop-item">
-            General Shop
-          </Dropdown.Item>
-          <Dropdown.Item eventKey="Digital_Marketing" className="drop-item">
-            Digital Marketing
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
     </div>
   );
 }

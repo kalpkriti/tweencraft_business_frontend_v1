@@ -3,10 +3,17 @@ import { Image } from "react-bootstrap";
 import Img from "./static/illustration.png";
 import { CustMod } from "./mods";
 import Ad from "./ad";
+import Footer from "./footer";
 
 export default function AboutUs() {
   return (
-    <div>
+    <div
+      style={{
+        background: "linear-gradient(180deg, #F8F8F8 -0.31%, #FFFFFF 52.09%)",
+        mixBlendMode: "normal",
+        height: "280px",
+      }}
+    >
       <div className="container text-center">
         <br />
         <span className="small-text my-auto">About us</span>
@@ -49,8 +56,13 @@ export default function AboutUs() {
         </div>
         <br />
         <br />
-        <Ad />
+        <div className="about-ad-pos">
+          <Ad />
+        </div>
       </center>
+      <div className="about-footer-pos">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -27,7 +27,7 @@ ReactDOM.render(
 
 export function BootNav() {
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" style={{ zIndex: "1" }}>
       <Navbar.Brand href="/">
         <svg
           width="115"
@@ -60,9 +60,16 @@ export function BootNav() {
         </svg>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse
+        id="basic-navbar-nav"
+        style={{ backgroundColor: "white" }}
+      >
         <Nav className="mx-auto">
-          <Nav.Link href="/sample" className="mx-4">
+          <Nav.Link
+            href="/sample"
+            className="mx-4"
+            style={{ backgroundColor: "white" }}
+          >
             Sample
           </Nav.Link>
           <Nav.Link href="/how-it-works" className="mx-4">

@@ -1,12 +1,13 @@
 /* Burger House Califor */
 
+/*-------------------------------------Props--------------------------------*/
+
 .heading {
-  /*position: absolute;
-left: 35.28%;
-right: 35.28%;
-top: 5.67%;
-bottom: 90.77%;
-*/
+  /* position: absolute;
+  left: 35.28%;
+  right: 35.28%;
+  top: 5.67%;
+  bottom: 90.77%; */
 
   font-family: Mart;
   font-style: normal;
@@ -14,11 +15,30 @@ bottom: 90.77%;
   font-size: 35px;
   line-height: 60px;
   /* or 150% */
-  text-align: center;
+
   letter-spacing: 0.4px;
 
   color: #28272b;
   margin: 5px 5px;
+}
+
+.elem1 {
+  right: 453px;
+
+  top: 220px;
+}
+
+.elem2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 34px;
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  left: 522px;
+  top: 390px;
 }
 
 .small-text {
@@ -40,12 +60,523 @@ bottom: 90.77%;
   opacity: 0.6;
 }
 
+/*--------------------------------------------------------------------------------------
+ Sample Page */
+
+#video {
+  width: 1040px;
+  height: 600px;
+}
+
+.anim-style {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+}
+.sample-pos {
+  position: absolute;
+  left: 680px;
+  top: 145px;
+  display: block;
+}
+
+.anim-pos {
+  position: absolute;
+  top: 191px;
+  left: 508px;
+}
+
+.tabpill-pos {
+  position: absolute;
+  top: 458px;
+  left: 200px;
+}
+.search-pos {
+  position: absolute;
+  width: 320px;
+  height: 48px;
+  left: 310px;
+  top: 351px;
+}
+
+.industry-drop {
+  position: absolute;
+  top: 336px;
+  left: 19px;
+  text-align: left;
+  padding: 0%;
+  width: 150px;
+  display: none;
+}
+.lang-drop {
+  position: absolute;
+  left: 730px;
+  top: 351px;
+  text-align: left;
+  padding: 0%;
+  width: 400px;
+}
+
+.video-pos {
+  position: absolute;
+  top: 545px;
+  left: 202px;
+}
+
+.custmod-pos {
+  position: absolute;
+  top: 1652px;
+}
+
+.ad-pos {
+  position: absolute;
+  top: 2445px;
+  width: 1240px;
+  height: 290px;
+  left: 100px;
+
+  background-image: url(./static/ad.png);
+  background-color: #e9f0fa;
+  background-repeat: no-repeat;
+}
+
+.ad-head {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+
+  width: 756px;
+}
+
+.ad-head-pos {
+  position: absolute;
+  top: 106px;
+  left: 100px;
+}
+
+.ad-small-head-pos {
+  position: absolute;
+  top: 72px;
+  left: 100px;
+}
+
+.ad-button-pos {
+  left: 920px;
+  top: 110px;
+  position: absolute;
+}
+
+.ad-small-button-text-pos {
+  position: absolute;
+  top: 190px;
+  left: 913px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.4px;
+
+  color: rgba(57, 63, 66, 0.8);
+}
+
+.sample-footer {
+  position: absolute;
+  top: 2815px;
+  width: 1440px;
+}
+
+.thumbs-pos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: absolute;
+  top: 1228.19px;
+  width: 1440px;
+  height: 224px;
+}
+
+/*--------------Test----------------------*/
+
+@keyframes anim1 {
+  from {
+    background-color: red;
+    margin-top: 50px;
+  }
+  to {
+    background-color: yellow;
+    margin-top: 100px;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    background-color: yellow;
+    margin-top: 100px;
+  }
+  to {
+    background-color: green;
+    margin-top: 200px;
+  }
+}
+
+.anim-test1 {
+  animation-name: anim1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.anim-test2 {
+  animation-name: anim2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+/*-------------Mobile---------------------*/
+
+@media (max-width: 454px) {
+  #video {
+    width: 360px;
+    height: 450px;
+  }
+
+  .sample-pos {
+    display: none;
+  }
+  .anim-style {
+    font-family: Mart;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    /* or 142% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+  }
+  .anim-pos {
+    position: absolute;
+    top: 150px;
+    left: 51px;
+  }
+  .search-pos {
+    position: absolute;
+
+    left: 19px;
+    top: 268px;
+    padding: 0%;
+    margin: 0%;
+  }
+  .industry-drop {
+    position: absolute;
+    top: 336px;
+    left: 19px;
+    text-align: left;
+    padding: 0%;
+    width: 150px;
+    display: block;
+  }
+  .lang-drop {
+    position: absolute;
+    top: 336px;
+    left: 189px;
+    text-align: left;
+    padding: 0%;
+    width: 150px;
+  }
+
+  .video-pos {
+    position: absolute;
+    top: 424px;
+    left: 0px;
+  }
+
+  .thumbs-pos {
+    position: absolute;
+    top: 892px;
+    width: 360px;
+    text-align: center;
+  }
+
+  .custmod-pos {
+    position: absolute;
+    top: 1126px;
+  }
+
+  .ad-pos {
+    position: absolute;
+    top: 1967px;
+    height: 430px;
+    width: 320px;
+    left: 20px;
+  }
+
+  .ad-head {
+    font-family: Mart;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    /* or 138% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #393f42;
+
+    width: 276px;
+  }
+  .ad-head-pos {
+    position: absolute;
+    top: 106px;
+    left: 21px;
+  }
+
+  .ad-small-head-pos {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+  }
+
+  .ad-button-pos {
+    position: absolute;
+    top: 290px;
+    left: 60px;
+  }
+  .ad-small-button-text-pos {
+    position: absolute;
+    left: 47px;
+    top: 354px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.4px;
+
+    color: rgba(57, 63, 66, 0.8);
+  }
+
+  .sample-footer {
+    position: absolute;
+    top: 2457px;
+    width: 360px;
+  }
+}
+
+/*---------------------------------Home---------------------------------------------------------*/
+
+.home-how {
+  position: absolute;
+
+  width: 1440px;
+  height: 1204px;
+
+  top: 4250px;
+}
+
+@media (max-width: 454px) {
+  .home-how {
+    position: absolute;
+    width: 320px;
+    height: 1204px;
+
+    top: 6350px;
+  }
+}
+/*-----------------------------How-it-works-----------------------------------------------------*/
+
+.how-title {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+
+  position: absolute;
+  top: 160px;
+  left: 660px;
+}
+.how-head {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+}
+
+.how-head-pos {
+  position: absolute;
+  top: 206px;
+  left: 441px;
+  height: 120px;
+  width: 561px;
+}
+
+.how-img {
+  position: absolute;
+  top: 380px;
+  left: 200px;
+  background-image: url(./static/works.png);
+
+  width: 1040px;
+  height: 650px;
+}
+
+.how-ad-pos {
+  position: absolute;
+  width: 1240px;
+  height: 290px;
+  left: 100px;
+  top: 1100px;
+  background-image: url(./static/ad.png);
+  background-color: #e9f0fa;
+  background-repeat: no-repeat;
+}
+
+.how-foot {
+  position: absolute;
+  top: 1470px;
+  width: 1440px;
+}
+
+@media (max-width: 454px) {
+  .how-title {
+    display: none;
+  }
+  .how-head {
+    font-family: Mart;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    /* or 142% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #393f42;
+  }
+
+  .how-head-pos {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    height: 68px;
+    width: 320px;
+  }
+
+  .how-img {
+    position: absolute;
+    top: 278px;
+    left: 20px;
+    background-image: url(./static/img.png);
+    height: 1095px;
+    width: 310px;
+  }
+
+  .how-ad-pos {
+    position: absolute;
+    top: 1414px;
+    height: 430px;
+    width: 320px;
+    left: 20px;
+
+    background-image: url(./static/ad.png);
+    background-color: #e9f0fa;
+    background-repeat: no-repeat;
+  }
+
+  .how-foot {
+    position: absolute;
+    top: 1904px;
+    width: 360px;
+  }
+}
+/*-------------------------------About-Us-----------------------------------------------------*/
+
+.about-ad-pos {
+  position: absolute;
+  top: 2046px;
+  width: 1240px;
+  height: 290px;
+  left: 100px;
+
+  background-image: url(./static/ad.png);
+  background-color: #e9f0fa;
+  background-repeat: no-repeat;
+}
+
+.about-footer-pos {
+  position: absolute;
+  top: 2416px;
+  width: 1440px;
+}
+
+@media (max-width: 454px) {
+  .about-ad-pos {
+    position: absolute;
+    top: 1844px;
+    height: 430px;
+    width: 320px;
+    left: 20px;
+
+    background-image: url(./static/ad.png);
+    background-color: #e9f0fa;
+    background-repeat: no-repeat;
+  }
+  .about-footer-pos {
+    position: absolute;
+    top: 2334px;
+    width: 360px;
+    height: 830px;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
 #dropdown-basic {
   /* Rectangle 48 */
 
-  width: 424px;
-  height: 60px;
-  left: 508px;
+  width: 400px;
+  height: 50px;
+  left: 730px;
   top: 341px;
 
   background: #ffffff;
@@ -65,14 +596,20 @@ bottom: 90.77%;
   color: rgba(40, 39, 43, 0.8);
 }
 
+#sample {
+  width: 280px;
+  height: 190px;
+  margin: 5px 5px;
+}
+
 #dropdown-basic:hover,
 #dropdown-basic:focus,
 #dropdown-basic:active {
   /* Rectangle 48 */
 
-  width: 424px;
-  height: 60px;
-  left: 508px;
+  width: 400px;
+  height: 50px;
+  left: 730px;
   top: 341px;
 
   background: #f7f7f7;
@@ -103,23 +640,23 @@ bottom: 90.77%;
 .tab {
   /* bgr */
 
-  background-color: #d1db2a;
+  background-color: #aab318;
   border-radius: 5px;
   padding: 8px 15px;
 }
 
 .tab:hover {
   cursor: pointer;
-  background: #d1db2a;
+  background: #aab318;
 }
 
 .tab:active {
-  background-color: #d1db2a;
+  background-color: #aab318;
 }
 
 .active-tab {
   text-decoration: underline;
-  color: #d1db2a;
+  color: #aab318;
   padding: 2rem;
 }
 
@@ -127,14 +664,15 @@ bottom: 90.77%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-
+  font-size: 16px;
+  line-height: 16px;
   /* identical to box height, or 100% */
+
   letter-spacing: 0.4px;
 
-  color: #000000;
+  color: #393f42;
 
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .small-tab-text:hover {
@@ -146,15 +684,15 @@ bottom: 90.77%;
 } */
 .cust1:active,
 .cust1:focus {
-  color: #d1db2a;
+  color: #aab318;
 
   border-style: none none solid;
   border-width: 1.6px;
-  border-color: #d1db2a;
+  border-color: #aab318;
 }
 
 #carousel1 {
-  width: 60%;
+  width: 100%;
 }
 
 #tabs1 {
@@ -168,6 +706,17 @@ bottom: 90.77%;
   block-size: 100%;
 }
 
+#lang-drop {
+  text-align: left;
+  width: 400px;
+  height: 50px;
+  left: 300px;
+}
+#cols-1 {
+  display: none;
+  width: 0px;
+}
+
 @media (max-width: 800px) {
   #carousel1 {
     width: 100%;
@@ -178,9 +727,12 @@ bottom: 90.77%;
     height: 100%;
   }
   #tabs2 {
-    visibility: hidden;
+    /* visibility: hidden; */
     display: none;
     height: 0%;
+  }
+  #cols-1 {
+    display: block;
   }
 }
 
@@ -189,7 +741,7 @@ bottom: 90.77%;
   #dropdown-basic:hover,
   #dropdown-basic:focus,
   #dropdown-basic:active {
-    width: 80%;
+    width: 150px;
   }
 }
 
@@ -205,9 +757,7 @@ bottom: 90.77%;
 #testi-1 {
   text-align: left;
 }
-#video {
-  width: 60%;
-}
+
 @media (max-width: 454px) {
   .heading {
     font-family: Mart;
@@ -247,16 +797,35 @@ bottom: 90.77%;
   }
   #testi-1 {
     text-align: center;
+    margin-right: 0px;
   }
   #video {
     width: 100%;
+  }
+  #margin-res {
+    width: 0px;
+  }
+  #search {
+    margin-left: 0px;
+    width: 300px;
+  }
+  #lang-drop {
+    text-align: center;
+    margin-top: 30px;
+    width: 150px;
+    left: 0px;
+  }
+  #sample {
+    width: 200px;
+    height: 135px;
+    margin: 5px 5px;
   }
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: rgb(255, 255, 255);
-  background-color: #d1db2a;
+  background-color: #aab318;
 }
 
 .jumbotron {
@@ -275,7 +844,7 @@ bottom: 90.77%;
 
   letter-spacing: 0.4px;
 
-  color: #d1db2a;
+  color: #aab318;
 
   mix-blend-mode: normal;
 }

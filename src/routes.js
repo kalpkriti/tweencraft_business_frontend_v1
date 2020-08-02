@@ -16,6 +16,7 @@ import Category from "./category.js";
 import StartProject from "./start_project";
 import WebRoute from "./webapp/routes";
 import Footer from "./footer";
+import Test from "./test";
 
 export default function Routes() {
   return (
@@ -23,17 +24,15 @@ export default function Routes() {
       <Switch>
         <Route exact path="/">
           <Home />
-          <Footer />
         </Route>
         <Route exact path="/sample">
           <BootNav />
           <Sample />
-          <Footer />
         </Route>
         <Route exact path="/how-it-works">
           <BootNav />
           <HowItWorks />
-          <Footer />
+          {/* <Footer /> */}
         </Route>
         <Route exact path="/pricing">
           <BootNav />
@@ -48,7 +47,6 @@ export default function Routes() {
         <Route exact path="/aboutus">
           <BootNav />
           <AboutUs />
-          <Footer />
         </Route>
         <Route exact path="/category/:name">
           <BootNav />
@@ -62,6 +60,9 @@ export default function Routes() {
         </Route>
         <Route exact path="/login">
           <WebRoute />
+        </Route>
+        <Route exact path="/test">
+          <Test />
         </Route>
       </Switch>
     </Router>

@@ -21,6 +21,12 @@ var arr = [
 ];
 
 function Home() {
+  useEffect(() => {
+    var butt = document.getElementById("Insurance");
+    console.log(butt);
+    butt.click();
+  }, []);
+
   const [index, setIndex] = useState(0);
   const [vids, setVids] = useState([]);
 
@@ -42,7 +48,11 @@ function Home() {
 
   const listItems = arr.map((name) => (
     <Nav.Item>
-      <Nav.Link className="small-tab-text cust1" eventKey={arr.indexOf(name)}>
+      <Nav.Link
+        className="small-tab-text cust1"
+        eventKey={arr.indexOf(name)}
+        id={name[1]}
+      >
         {name[1]}
       </Nav.Link>
     </Nav.Item>
@@ -60,18 +70,12 @@ function Home() {
       <div className="text-center py-2" id="bgimg">
         <BootNavWhite />
 
-        <div className="container mx-auto py-4">
-          <h2 className="heading" style={{ color: "white" }} id="res-head">
-            Cost effective animated videos for your business.
-          </h2>
-        </div>
+        <h2 className="heading elem1" style={{ color: "white" }} id="res-head">
+          Cost effective animated videos for your business.
+        </h2>
 
         <div className="container mx-auto">
-          <h3
-            className="lead font-weight-normal"
-            id="white"
-            style={{ marginBottom: "30px" }}
-          >
+          <h3 className="elem2" id="white">
             We work with businesses to improve their social media marketing with
             animated videos.
           </h3>
@@ -83,7 +87,7 @@ function Home() {
           className="btn btn-primary btn-lg"
           href="/startproject"
           style={{
-            backgroundColor: "#D1DB2A",
+            backgroundColor: "#AAB318",
             border: "none",
             borderRadius: "10px",
           }}
@@ -114,7 +118,7 @@ function Home() {
             >
               {listItems}
               <Nav.Item>
-                <Nav.Link href="/sample" className="small-tab-text">
+                <Nav.Link href="/sample" className="small-tab-text" id="view">
                   View all
                 </Nav.Link>
               </Nav.Item>
@@ -136,7 +140,7 @@ function Home() {
         Features
       </div>
       <br />
-      <h2 className="heading" style={{ marginTop: "30px" }}>
+      <h2 className="heading text-center" style={{ marginTop: "30px" }}>
         Use kalpkriti to drive growth at your business
       </h2>
       <br />
@@ -144,17 +148,24 @@ function Home() {
       <br />
       <div className="container">
         <Feature1 />
-        <br />
-        <br />
-        <Feature2 id="res-center" />
-        <br />
-        <br />
+      </div>
+      <br />
+      <br />
+
+      <div style={{ backgroundColor: "rgba(119, 104, 80, 0.02)" }}>
+        <div className="container">
+          <Feature2 />
+        </div>
+      </div>
+      <br />
+      <br />
+      <div className="container">
         <Feature3 id="res-center" />
       </div>
       <br />
       <br />
       <br />
-      <div className="container">
+      <div>
         <CustMod />
       </div>
       <br />
@@ -163,7 +174,9 @@ function Home() {
       <br />
       <Cards />
       <br />
-      <HowItWorks />
+      <div className="home-how">
+        <HowItWorks />
+      </div>
     </div>
   );
 }
@@ -175,7 +188,7 @@ function ControlledCarousel(props) {
     <Image
       src={vid.thumbnail}
       onClick={() => handleShow(vid.url)}
-      style={{ height: "20%", width: "23%", margin: "5px 5px" }}
+      id="sample"
     />
   ));
 
