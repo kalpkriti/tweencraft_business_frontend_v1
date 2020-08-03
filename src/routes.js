@@ -58,9 +58,9 @@ export default function Routes() {
           <StartProject />
           <Footer />
         </Route>
-        <Route exact path="/login">
+        {/* <Route exact path="/login">
           <WebRoute />
-        </Route>
+        </Route> */}
         <Route exact path="/test">
           <Test />
         </Route>
