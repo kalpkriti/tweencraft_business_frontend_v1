@@ -5,13 +5,7 @@ import Footer from "./footer";
 
 export default function HowItWorks() {
   return (
-    <div
-      style={{
-        background: "linear-gradient(180deg, #F8F8F8 -0.31%, #FFFFFF 52.09%)",
-        mixBlendMode: "normal",
-        height: "280px",
-      }}
-    >
+    <div>
       <div className="how-title">How it Works</div>
 
       <div className="how-head-pos how-head">

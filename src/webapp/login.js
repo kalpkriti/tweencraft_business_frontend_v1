@@ -5,10 +5,18 @@ import Illustration from "../static/illustration.png";
 
 export default function Login() {
   return (
-    <div className="container my-4">
+    <div className="my-4">
       <div className="row align-items-center">
-        <div className="col">
-          <div className="container">
+        <div
+          className="col"
+          style={{
+            background:
+              "linear-gradient(180deg, #F8F8F8 -0.31%, rgba(255, 255, 255, 0) 135.06%)",
+            mixBlendMode: "normal",
+            padding: "5%",
+          }}
+        >
+          <div className="container" style={{ width: "70%" }}>
             <a href="/">
               <Image
                 src={logo}
@@ -19,7 +27,7 @@ export default function Login() {
             <span className="heading">
               Cost effective animated videos for your business
             </span>
-
+            <br />
             <br />
             <span className="small-text" style={{ textTransform: "none" }}>
               We work with businesses to improve their social media marketing
@@ -31,7 +39,7 @@ export default function Login() {
           </div>
         </div>
         <div className="col ">
-          <div className="mx-5">
+          <div className="container " style={{ width: "75%" }}>
             <span className="heading my-1">Registered Customers</span>
             <br />
             <div className="my-3">

@@ -37,12 +37,10 @@ export default function Routes() {
         <Route exact path="/pricing">
           <BootNav />
           <Pricing />
-          <Footer />
         </Route>
         <Route exact path="/contact">
           <BootNav />
           <Contact />
-          <Footer />
         </Route>
         <Route exact path="/aboutus">
           <BootNav />
@@ -59,6 +57,9 @@ export default function Routes() {
           <Footer />
         </Route>
         {/* <Route exact path="/login">
+          <WebRoute />
+        </Route>
+        <Route exact path="/dashboard">
           <WebRoute />
         </Route> */}
         <Route exact path="/test">

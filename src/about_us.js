@@ -16,30 +16,14 @@ export default function AboutUs() {
     >
       <div className="container text-center">
         <br />
-        <span className="small-text my-auto">About us</span>
-        <br />
-        <br />
-        <span className="heading my-auto">
+        <span className="about-title-pos">About us</span>
+
+        <span className="about-head-pos about-head">
           Animated Videos most powerful way to share information
         </span>
         <br />
-        <br />
-        <span
-          className="my-3"
-          style={{
-            fontFamily: "Monteserrat",
-            fontStyle: "normal",
-            fontWeight: "normal",
-            fontSize: "18px",
-            lineHeight: "34px",
 
-            textAlign: "center",
-            letterSpacing: "0.4px",
-
-            color: "#28272B",
-            opacity: "0.8",
-          }}
-        >
+        <span className="about-body">
           We work with businesses to improve their social media marketing with
           animated videos. Using animated videos helps improve the reach and
           engagement for your social media ads. Our chatbot and dashboard
@@ -47,11 +31,13 @@ export default function AboutUs() {
           videos for your business.
         </span>
         <br />
-        <Image src={Img} className="my-4" style={{ width: "100%" }} />
+        <div className="about-img-pos">
+          <Image src={Img} className="my-4" style={{ width: "100%" }} />
+        </div>
       </div>
       <br />
       <center>
-        <div className="container">
+        <div className="about-cust">
           <CustMod />
         </div>
         <br />

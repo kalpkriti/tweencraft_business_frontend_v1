@@ -24,7 +24,7 @@ export function CustMod() {
         <br />
         <br />
         <br />
-        <div className="container" id="testi-1" style={{ width: "100%" }}>
+        <div className="container" id="testi-1" style={{ margin: "150px 0px" }}>
           <svg
             width="48"
             height="34"
@@ -59,14 +59,21 @@ export function CustMod() {
                 letterSpacing: "0.4px",
               }}
             >
-              Our chatbot and dashboard features that will update and run entire
-              process seamless animated videos for your business. When it comes
-              advertise your business to take their social media to the next
-              level with animated videos.
+              I’m very satisfied. I never thought that I would get such good
+              response within 15 days. I just promoted the video for 10 to 20
+              days, spend less cost and reached 80000 to 90000 people. I got
+              many enquirers everyday online and customers came to my showroom
+              during this pandemic. Happy Jewells gave me your reference. They
+              told me that I should try. It’s is not costly. I found the videos
+              to be helpful. I got customers when I run an Ad on Facebook.
             </span>
           </div>
           <br />
-          <img src={Prof} />
+          <div>
+            <span className="testi-author">Vrutik Gandhi</span>
+            <br />
+            <span className="testi-author-designation">Jewellery</span>
+          </div>
         </div>
       </div>
     </div>
@@ -121,7 +128,7 @@ export function Feature1() {
         </span>
         <br />
         <br />
-        <span id="res-center">
+        <span className="" id="res-center">
           Using animated videos helps improve the reach and engagement for your
           social media ads.
         </span>
@@ -130,7 +137,42 @@ export function Feature1() {
         <br />
         <br />
 
-        <img src={Comment} style={{ width: "100%" }} />
+        {/* <img src={Comment} style={{ width: "100%" }} /> */}
+
+        <div className="testi-box">
+          <svg
+            width="49"
+            height="26"
+            viewBox="0 0 49 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="testi-mark"
+          >
+            <rect width="49" height="26" fill="white" />
+            <path
+              d="M16.9461 4.45459C16.6569 4.45459 9.87598 12.1652 11.1621 17.9713C12.3189 23.1937 16.7533 22.7841 18.6813 21.9649C19.8381 21.4529 22.0361 19.323 21.5733 16.1282C20.9949 12.1346 17.8137 11.213 16.3677 11.5202"
+              stroke="#AAB318"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+            <path
+              d="M32.3094 4.45459C32.0202 4.45459 25.2393 12.1652 26.5254 17.9713C27.6822 23.1937 32.1166 22.7841 34.0446 21.9649C35.2014 21.4529 37.3993 19.323 36.9366 16.1282C36.3582 12.1346 33.177 11.213 31.731 11.5202"
+              stroke="#AAB318"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <div className="testi-comment">
+            Made videos for public awareness purpose. This is working! Pricewise
+            it’s good. My plan is to make videos every week so that I keep my
+            page active.
+            <div className="testi-comment-author my-3">
+              Shiva,{" "}
+              <span style={{ margin: "0%", opacity: "0.6" }}>Doctor</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="col-sm">
         <img src={Illus1} style={{ width: "100%" }} />
@@ -182,7 +224,43 @@ export function Feature2() {
         <br />
         <br />
         <br />
-        <img src={Comment2} style={{ width: "100%" }} />
+        <div className="testi-box">
+          <svg
+            width="49"
+            height="26"
+            viewBox="0 0 49 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="testi-mark"
+          >
+            <rect width="49" height="26" fill="white" />
+            <path
+              d="M16.9461 4.45459C16.6569 4.45459 9.87598 12.1652 11.1621 17.9713C12.3189 23.1937 16.7533 22.7841 18.6813 21.9649C19.8381 21.4529 22.0361 19.323 21.5733 16.1282C20.9949 12.1346 17.8137 11.213 16.3677 11.5202"
+              stroke="#AAB318"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+            <path
+              d="M32.3094 4.45459C32.0202 4.45459 25.2393 12.1652 26.5254 17.9713C27.6822 23.1937 32.1166 22.7841 34.0446 21.9649C35.2014 21.4529 37.3993 19.323 36.9366 16.1282C36.3582 12.1346 33.177 11.213 31.731 11.5202"
+              stroke="#AAB318"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <div className="testi-comment">
+            Making third video from you, now. The videos are as per our needs.
+            Our initial thought was to just communicate to our customers in a
+            better way. Really liked the time spent during the process. The
+            operations team is good.
+            <div className="testi-comment-author my-3">
+              Pradeep Sen,{" "}
+              <span style={{ margin: "0%", opacity: "0.6" }}>
+                Mahaveer Jain Jewellers
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -225,7 +303,7 @@ export function Feature3() {
         </svg>
         <br />
         <br />
-        <span className="heading">Effective communication</span>
+        <span className="heading">Effective Communication</span>
         <br />
         <span>
           Our support and dashboard features leaves no room for any
@@ -235,7 +313,41 @@ export function Feature3() {
         <br />
         <br />
 
-        <img src={Comment} style={{ width: "100%" }} />
+        <div className="testi-box">
+          <svg
+            width="49"
+            height="26"
+            viewBox="0 0 49 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="testi-mark"
+          >
+            <rect width="49" height="26" fill="white" />
+            <path
+              d="M16.9461 4.45459C16.6569 4.45459 9.87598 12.1652 11.1621 17.9713C12.3189 23.1937 16.7533 22.7841 18.6813 21.9649C19.8381 21.4529 22.0361 19.323 21.5733 16.1282C20.9949 12.1346 17.8137 11.213 16.3677 11.5202"
+              stroke="#AAB318"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+            <path
+              d="M32.3094 4.45459C32.0202 4.45459 25.2393 12.1652 26.5254 17.9713C27.6822 23.1937 32.1166 22.7841 34.0446 21.9649C35.2014 21.4529 37.3993 19.323 36.9366 16.1282C36.3582 12.1346 33.177 11.213 31.731 11.5202"
+              stroke="#AAB318"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <div className="testi-comment">
+            Thank you for making my video. I am happy. Did a good job. The
+            writer gave good suggestions.
+            <div className="testi-comment-author my-3">
+              Shilpi Maheshwari,{" "}
+              <span style={{ margin: "0%", opacity: "0.6" }}>
+                Handicraft Business Owner
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="col-sm">

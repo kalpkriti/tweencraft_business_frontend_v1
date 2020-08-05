@@ -1,9 +1,19 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Modal } from "react-bootstrap";
+import StartProject from "./start_project";
+import { useState } from "react";
 
 export default function Cards() {
+  const [formShow, setFormShow] = useState(false);
+  const handleFormClose = () => {
+    setFormShow(false);
+  };
+  const handleFormShow = () => {
+    setFormShow(true);
+  };
   return (
     <div>
+      <Start_Project show={formShow} handle={handleFormClose} />
       <div
         className="container-fluid"
         style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
@@ -12,24 +22,63 @@ export default function Cards() {
         <br />
 
         <Card className="mx-3 my-5">
-          <Card.Body className="mx-2">
+          <Card.Body className="mx-2 text-center">
             <Card.Title>
-              <span>1 Video</span>
+              <span className="h2">Basic</span>
               <br />
-              <br />
-              <span className="">Price: ₹1000</span>
+              <span className="">₹999</span>
             </Card.Title>
-            <br />
+
             <Card.Text style={{ color: "grey" }}>
-              Less than one minute video
+              <br />
+              <div className="mb-4">
+                <span className="h5">Free Script Revisions</span>
+                <br />
+                <span className="">2</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Free Video Revisions</span>
+                <br />
+                <span className="">1</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Character</span>
+                <br />
+                <span className="">1</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Background </span>
+                <br />
+                <span className="">1</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Added Images</span>
+                <br />
+                <span className="">1</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Text</span>
+                <br />
+                <span className="">1 (Without Animation)</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">3 Video Packages (NA)</span>
+                <br />
+                <span className="">1 (Without Animation)</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">5 Video Packages (NA)</span>
+                <br />
+                <span className="">1 (Without Animation)</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">10 Video Packages (9000)</span>
+                <br />
+                <span className="">₹4000</span>
+              </div>
             </Card.Text>
-            <br />
-            <br />
-            <span className="lead">Advance: ₹400</span>
-            <br />
-            <br />
-            <br />
-            <br />
             <br />
 
             {/* <div className="">
@@ -150,6 +199,7 @@ export default function Cards() {
 
             <Button
               className="px-5"
+              onClick={handleFormShow}
               style={{
                 background: "none",
                 borderColor: "#AAB318",
@@ -162,28 +212,68 @@ export default function Cards() {
         </Card>
 
         <Card className="mx-3 my-5">
-          <Card.Body className="mx-2">
+          <Card.Body className="mx-2 text-center">
             <Card.Title>
-              <span>3 Videos</span>
+              <span className="h2">Popular</span>
               <br />
-              <br />
-              <span className="">Price: ₹2700</span>
+              <span className="">₹1299</span>
             </Card.Title>
-            <br />
+
             <Card.Text style={{ color: "grey" }}>
-              Less than one minute video
+              <br />
+              <div className="mb-4">
+                <span className="h5">Free Script Revisions</span>
+                <br />
+                <span className="">4</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Free Video Revisions</span>
+                <br />
+                <span className="">4</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Character</span>
+                <br />
+                <span className="">3</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Background </span>
+                <br />
+                <span className="">3</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Added Images</span>
+                <br />
+                <span className="">3</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Text</span>
+                <br />
+                <span className="">4 (Without Animation)</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">3 Video Packages (₹3600)</span>
+                <br />
+                <span className="">₹1500 Advance</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">5 Video Packages (₹5500)</span>
+                <br />
+                <span className="">₹2200 Advance</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">10 Video Packages (₹10000)</span>
+                <br />
+                <span className="">₹4000 Advance</span>
+              </div>
             </Card.Text>
-            <br />
-            <br />
-            <span className="lead">Advance: ₹1200</span>
-            <br />
-            <br />
-            <br />
-            <br />
             <br />
 
             <Button
               className="px-5"
+              onClick={handleFormShow}
               style={{
                 background: "none",
                 borderColor: "#AAB318",
@@ -196,62 +286,67 @@ export default function Cards() {
         </Card>
 
         <Card className="mx-3 my-5">
-          <Card.Body className="mx-2">
+          <Card.Body className="mx-2 text-center">
             <Card.Title>
-              <span>6 Videos</span>
+              <span className="h2">Premium</span>
               <br />
-              <br />
-              <span className="">Price: ₹5000</span>
+              <span className="">₹1999</span>
             </Card.Title>
-            <br />
+
             <Card.Text style={{ color: "grey" }}>
-              Less than one minute video
+              <br />
+              <div className="mb-4">
+                <span className="h5">Free Script Revisions</span>
+                <br />
+                <span className="">7</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Free Video Revisions</span>
+                <br />
+                <span className="">7</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Character</span>
+                <br />
+                <span className="">10</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Background </span>
+                <br />
+                <span className="">10</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Added Images</span>
+                <br />
+                <span className="">7</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Text</span>
+                <br />
+                <span className="">4 (Without Animation)</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">3 Video Packages (₹3600)</span>
+                <br />
+                <span className="">₹1500 Advance</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">5 Video Packages (₹5500)</span>
+                <br />
+                <span className="">₹2200 Advance</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">10 Video Packages (₹10000)</span>
+                <br />
+                <span className="">₹4000 Advance</span>
+              </div>
             </Card.Text>
             <br />
-            <br />
-            <span className="lead">Advance: ₹2000</span>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
             <Button
               className="px-5"
-              style={{
-                background: "none",
-                borderColor: "#AAB318",
-                color: "#AAB318",
-              }}
-            >
-              Start a Project
-            </Button>
-          </Card.Body>
-        </Card>
-
-        <Card className="mx-3 my-5">
-          <Card.Body className="mx-2">
-            <Card.Title>
-              <span>10 Videos</span>
-              <br />
-              <br />
-              <span className="">Price: ₹8000</span>
-            </Card.Title>
-            <br />
-            <Card.Text style={{ color: "grey" }}>
-              Less than one minute video
-            </Card.Text>
-            <br />
-            <br />
-            <span className="lead">Advance: ₹3000</span>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <Button
-              className="px-5"
+              onClick={handleFormShow}
               style={{
                 background: "none",
                 borderColor: "#AAB318",
@@ -266,9 +361,21 @@ export default function Cards() {
 
       <br />
       <center>
-        <span className="lead">
-          *If video exceeds 1 min, then 15 Rs per extra second will be charged.
-        </span>
+        <div style={{ width: "50%" }}>
+          <span className="lead">
+            T&C
+            <br />
+            <br />
+            * Customer will have to provide all the images
+            <br />
+            * Once free revisions are consumed, each paid revisions will cost
+            100 Rs for script, 200 Rs for video
+            <br />* To make the video quick you will have to be responsive, if
+            you do not provide feedback on script or video for a week, we will
+            assume you are no longer interested and we will cancel the project
+            without advanced refund.
+          </span>
+        </div>
       </center>
 
       {/* <Card className="mx-3 my-5">
@@ -554,6 +661,26 @@ export default function Cards() {
           </Button>
         </Card.Body>
       </Card> */}
+    </div>
+  );
+}
+
+function Start_Project(props) {
+  return (
+    <div>
+      <Modal
+        show={props.show}
+        onHide={props.handle}
+        size="l"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton></Modal.Header>
+
+        <Modal.Body>
+          <StartProject handle={props.handle} />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }

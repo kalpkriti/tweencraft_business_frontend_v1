@@ -1,0 +1,131 @@
+.dash-greeting {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  /* identical to box height, or 90% */
+
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+}
+
+.dash-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+
+  opacity: 0.8;
+}
+
+.inner-card {
+  background: #ffffff;
+  border-radius: 10px;
+  height: 246px;
+  width: 400px;
+}
+
+.inner-card-title {
+  margin: 5%;
+}
+
+.inner-card-text {
+  margin-left: 5%;
+}
+
+.review-button {
+  margin-left: 5%;
+  height: 28px;
+  width: 128px;
+  background: #f7f8dafa;
+  mix-blend-mode: normal;
+  opacity: 1;
+  border-radius: 26px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  border: none;
+
+  color: #aab318;
+}
+
+.review-button:active,
+.review-button:focus,
+.review-button:hover {
+  margin-left: 5%;
+  height: 28px;
+  width: 128px;
+  background: #e1e2bffa;
+  mix-blend-mode: normal;
+  opacity: 1;
+  border-radius: 26px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  border: none;
+
+  color: #aab318;
+}
+
+.stage-indicator-active {
+  margin-top: 5%;
+  margin-left: 2%;
+  background: #2d8b7a;
+  border-radius: 2.5px;
+  width: 58px;
+  height: 4px;
+}
+
+.stage-indicator-inactive {
+  margin-top: 5%;
+  margin-left: 2%;
+  background: rgba(57, 63, 66, 0.1);
+  border-radius: 2.5px;
+  width: 58px;
+  height: 4px;
+}
+
+.stage-indicator-num {
+  margin-top: 3.5%;
+  margin-left: 2%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  text-align: right;
+
+  color: rgba(57, 63, 66, 0.6);
+}
+.stage-indicators {
+  margin-left: 3%;
+}
+
+.proj-button,
+.proj-button:active,
+.proj-button:focus,
+.proj-button:hover {
+  background: none;
+  border-color: #aab318;
+  color: #aab318;
+}

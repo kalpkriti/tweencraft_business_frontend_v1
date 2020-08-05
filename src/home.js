@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import { Carousel, Nav, Dropdown, Image, Button, Modal } from "react-bootstrap";
 import Img from "./static/image.png";
 import "./style.css";
@@ -9,6 +9,7 @@ import Cards from "./price_card";
 import HowItWorks from "./how_it_works";
 import { BootNavWhite } from "./index";
 import axios from "axios";
+import StartProject from "./start_project";
 
 var arr = [
   ["Insurance", "Insurance"],
@@ -29,6 +30,15 @@ function Home() {
 
   const [index, setIndex] = useState(0);
   const [vids, setVids] = useState([]);
+
+  const [formShow, setFormShow] = useState(false);
+
+  const handleFormClose = () => {
+    setFormShow(false);
+  };
+  const handleFormShow = () => {
+    setFormShow(true);
+  };
 
   const handleVideoClick = (selectedKey) => {
     setIndex(selectedKey);
@@ -69,11 +79,15 @@ function Home() {
     <div>
       <div className="text-center py-2" id="bgimg">
         <BootNavWhite />
-
-        <h2 className="heading elem1" style={{ color: "white" }} id="res-head">
-          Cost effective animated videos for your business.
-        </h2>
-
+        <div className="home-heading-pos">
+          <h2
+            className="heading elem1"
+            style={{ color: "white" }}
+            id="res-head"
+          >
+            Cost effective animated videos for your business.
+          </h2>
+        </div>
         <div className="container mx-auto">
           <h3 className="elem2" id="white">
             We work with businesses to improve their social media marketing with
@@ -85,16 +99,17 @@ function Home() {
 
         <a
           className="btn btn-primary btn-lg"
-          href="/startproject"
+          onClick={handleFormShow}
           style={{
             backgroundColor: "#AAB318",
             border: "none",
             borderRadius: "10px",
+            color: "white",
           }}
         >
           Start a Project
         </a>
-
+        <Start_Project show={formShow} handle={handleFormClose} />
         <div className="container">
           <div id="tabs1">
             <br />
@@ -238,6 +253,22 @@ function ControlledCarousel(props) {
   );
 }
 
-function Tabs() {
-  return <div></div>;
+function Start_Project(props) {
+  return (
+    <div>
+      <Modal
+        show={props.show}
+        onHide={props.handle}
+        size="l"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton></Modal.Header>
+
+        <Modal.Body>
+          <StartProject handle={props.handle} />
+        </Modal.Body>
+      </Modal>
+    </div>
+  );
 }

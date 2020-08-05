@@ -86,7 +86,10 @@ export function BootNav() {
           </Nav.Link>
         </Nav>
         <Nav.Link href="/login" className="text-dark">
-          Login
+          WhatsApp: +918105942244
+        </Nav.Link>
+        <Nav.Link href="/login" className="text-dark">
+          Phone: +918744032032
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>
@@ -150,8 +153,11 @@ export function BootNavWhite() {
           </Nav.Link>
         </Nav>
 
-        <Nav.Link href="/login" id="white">
-          Login
+        <Nav.Link href="#" id="white">
+          WhatsApp: +918105942244
+        </Nav.Link>
+        <Nav.Link href="#" id="white">
+          Phone: +918744032032
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>
