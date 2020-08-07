@@ -2,6 +2,7 @@ import React from "react";
 import { CustMod } from "./mods";
 import Cards from "./price_card";
 import Footer from "./footer";
+import "./css/pricing.css";
 
 export default function Pricing() {
   return (

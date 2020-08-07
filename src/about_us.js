@@ -4,7 +4,7 @@ import Img from "./static/illustration.png";
 import { CustMod } from "./mods";
 import Ad from "./ad";
 import Footer from "./footer";
-
+import "./css/aboutus.css";
 export default function AboutUs() {
   return (
     <div

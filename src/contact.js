@@ -2,6 +2,7 @@ import React from "react";
 import { Image, Card, Button, Form } from "react-bootstrap";
 import illus from "./static/illustration1.png";
 import Footer from "./footer";
+import "./css/contact.css";
 
 export default function Contact() {
   return (

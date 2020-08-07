@@ -1,0 +1,23 @@
+.price-cust-pos {
+  position: absolute;
+  top: 1500px;
+}
+
+.price-footer-pos {
+  position: absolute;
+  top: 2305px;
+  width: 1440px;
+}
+
+@media (max-width: 454px) {
+  .price-cust-pos {
+    position: absolute;
+    top: 3900px;
+  }
+
+  .price-footer-pos {
+    position: absolute;
+    top: 5200px;
+    width: 370px;
+  }
+}

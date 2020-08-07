@@ -1,7 +1,7 @@
 import React, { StrictMode } from "react";
 import { Carousel, Nav, Dropdown, Image, Button, Modal } from "react-bootstrap";
 import Img from "./static/image.png";
-import "./style.css";
+import "./css/home.css";
 import { Feature1, CustMod, Feature2, Feature3 } from "./mods";
 import { useState, useEffect } from "react";
 import { Headings } from "./pricing";
@@ -79,17 +79,13 @@ function Home() {
     <div>
       <div className="text-center py-2" id="bgimg">
         <BootNavWhite />
-        <div className="home-heading-pos">
-          <h2
-            className="heading elem1"
-            style={{ color: "white" }}
-            id="res-head"
-          >
+        <div className="home-heading-pos container">
+          <h2 className="home-head">
             Cost effective animated videos for your business.
           </h2>
         </div>
-        <div className="container mx-auto">
-          <h3 className="elem2" id="white">
+        <div className="home-head-2-pos container">
+          <h3 className="home-head-2">
             We work with businesses to improve their social media marketing with
             animated videos.
           </h3>

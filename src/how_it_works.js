@@ -1,6 +1,6 @@
 import React from "react";
 import Ad from "./ad";
-import "./style.css";
+import "./css/howitworks.css";
 import Footer from "./footer";
 
 export default function HowItWorks() {

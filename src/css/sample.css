@@ -1,0 +1,320 @@
+#video {
+  width: 1040px;
+  height: 600px;
+}
+
+.anim-style {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+}
+.sample-pos {
+  position: absolute;
+  left: 680px;
+  top: 145px;
+  display: block;
+}
+
+.anim-pos {
+  position: absolute;
+  top: 191px;
+  left: 508px;
+}
+
+.tabpill-pos {
+  position: absolute;
+  top: 458px;
+  left: 200px;
+}
+.search-pos {
+  position: absolute;
+  width: 320px;
+  height: 48px;
+  left: 310px;
+  top: 351px;
+}
+
+.industry-drop {
+  position: absolute;
+  top: 336px;
+  left: 19px;
+  text-align: left;
+  padding: 0%;
+  width: 150px;
+  display: none;
+}
+.lang-drop {
+  position: absolute;
+  left: 730px;
+  top: 351px;
+  text-align: left;
+  padding: 0%;
+  width: 400px;
+}
+
+.video-pos {
+  position: absolute;
+  top: 545px;
+  left: 202px;
+}
+
+.custmod-pos {
+  position: absolute;
+  top: 1652px;
+}
+
+.ad-pos {
+  position: absolute;
+  top: 2445px;
+  width: 1240px;
+  height: 290px;
+  left: 100px;
+
+  background-image: url(../static/ad.png);
+  background-color: #e9f0fa;
+  background-repeat: no-repeat;
+}
+
+.ad-head {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+
+  width: 756px;
+}
+
+.ad-head-pos {
+  position: absolute;
+  top: 106px;
+  left: 100px;
+}
+
+.ad-small-head-pos {
+  position: absolute;
+  top: 72px;
+  left: 100px;
+}
+
+.ad-button-pos {
+  left: 920px;
+  top: 110px;
+  position: absolute;
+}
+
+.ad-small-button-text-pos {
+  position: absolute;
+  top: 190px;
+  left: 913px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.4px;
+
+  color: rgba(57, 63, 66, 0.8);
+}
+
+.sample-footer {
+  position: absolute;
+  top: 2815px;
+  width: 1440px;
+}
+
+.thumbs-pos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: absolute;
+  top: 1228.19px;
+  width: 1440px;
+  height: 224px;
+}
+
+/*--------------Test----------------------*/
+
+@keyframes anim1 {
+  from {
+    background-color: red;
+    margin-top: 50px;
+  }
+  to {
+    background-color: yellow;
+    margin-top: 100px;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    background-color: yellow;
+    margin-top: 100px;
+  }
+  to {
+    background-color: green;
+    margin-top: 200px;
+  }
+}
+
+.anim-test1 {
+  animation-name: anim1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.anim-test2 {
+  animation-name: anim2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+/*-------------Mobile---------------------*/
+
+@media (max-width: 454px) {
+  #video {
+    width: 360px;
+    height: 450px;
+  }
+
+  .sample-pos {
+    display: none;
+  }
+  .anim-style {
+    font-family: Mart;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    /* or 142% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+  }
+  .anim-pos {
+    position: absolute;
+    top: 150px;
+    left: 51px;
+  }
+  .search-pos {
+    position: absolute;
+
+    left: 19px;
+    top: 268px;
+    padding: 0%;
+    margin: 0%;
+  }
+  .industry-drop {
+    position: absolute;
+    top: 336px;
+    left: 19px;
+    text-align: left;
+    padding: 0%;
+    width: 150px;
+    display: block;
+  }
+  .lang-drop {
+    position: absolute;
+    top: 336px;
+    left: 189px;
+    text-align: left;
+    padding: 0%;
+    width: 150px;
+  }
+
+  .video-pos {
+    position: absolute;
+    top: 424px;
+    left: 0px;
+  }
+
+  .thumbs-pos {
+    position: absolute;
+    top: 892px;
+    width: 360px;
+    text-align: center;
+  }
+
+  .custmod-pos {
+    position: absolute;
+    top: 1126px;
+  }
+
+  .ad-pos {
+    position: absolute;
+    top: 2167px;
+    height: 430px;
+    width: 320px;
+    left: 20px;
+  }
+
+  .ad-head {
+    font-family: Mart;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    /* or 138% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #393f42;
+
+    width: 276px;
+  }
+  .ad-head-pos {
+    position: absolute;
+    top: 106px;
+    left: 21px;
+  }
+
+  .ad-small-head-pos {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+  }
+
+  .ad-button-pos {
+    position: absolute;
+    top: 290px;
+    left: 60px;
+  }
+  .ad-small-button-text-pos {
+    position: absolute;
+    left: 47px;
+    top: 354px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.4px;
+
+    color: rgba(57, 63, 66, 0.8);
+  }
+
+  .sample-footer {
+    position: absolute;
+    top: 2657px;
+    width: 360px;
+  }
+}

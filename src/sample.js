@@ -9,11 +9,11 @@ import {
 } from "react-bootstrap";
 import "./style.css";
 import Tweenpic from "./static/image.png";
-import ad from "./static/ad.png";
+
 import { CustMod } from "./mods";
 import Ad from "./ad";
 import axios from "axios";
-import Play from "./static/play.png";
+import "./css/sample.css";
 import Search from "./search";
 import Footer from "./footer";
 import { useState } from "react";

@@ -1,0 +1,193 @@
+.about-title-pos {
+  position: absolute;
+  top: 145px;
+  left: 676px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: #393f42;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.about-head {
+  font-family: Mart;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+}
+
+.about-head-pos {
+  position: absolute;
+  top: 191px;
+  left: 412px;
+  width: 617px;
+}
+
+.about-body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 34px;
+  /* or 212% */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: #393f42;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+
+  position: absolute;
+  top: 331px;
+  left: 253px;
+  width: 934px;
+  height: 102px;
+}
+
+.about-img-pos {
+  position: absolute;
+  top: 493px;
+  left: 259px;
+  width: 930px;
+  height: 620px;
+}
+.about-cust {
+  position: absolute;
+  top: 1253px;
+}
+
+.about-ad-pos {
+  position: absolute;
+  top: 2046px;
+  width: 1240px;
+  height: 290px;
+  left: 100px;
+
+  background-image: url(../static/ad.png);
+  background-color: #e9f0fa;
+  background-repeat: no-repeat;
+}
+
+.about-footer-pos {
+  position: absolute;
+  top: 2416px;
+  width: 1440px;
+}
+
+@media (max-width: 454px) {
+  .about-title-pos {
+    display: none;
+
+    position: absolute;
+    top: 145px;
+    left: 676px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: #393f42;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .about-head {
+    font-family: Mart;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    /* or 142% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #393f42;
+  }
+
+  .about-head-pos {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 320px;
+  }
+
+  .about-body {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 34px;
+    /* or 243% */
+
+    text-align: center;
+    letter-spacing: 0.4px;
+
+    color: #393f42;
+
+    mix-blend-mode: normal;
+
+    top: 272px;
+    left: 40px;
+    width: 280px;
+    height: 306px;
+  }
+
+  .about-img-pos {
+    position: absolute;
+    top: 638px;
+    left: 30px;
+    width: 301px;
+    height: 304px;
+  }
+  .about-cust {
+    position: absolute;
+    top: 1004px;
+  }
+
+  .about-ad-pos {
+    position: absolute;
+    top: 2244px;
+    height: 430px;
+    width: 320px;
+    left: 20px;
+
+    background-image: url(../static/ad.png);
+    background-color: #e9f0fa;
+    background-repeat: no-repeat;
+  }
+  .about-footer-pos {
+    position: absolute;
+    top: 2734px;
+    width: 370px;
+    height: 830px;
+  }
+}

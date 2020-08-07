@@ -3,9 +3,7 @@ import Illus1 from "./static/illus1.png";
 import Illus2 from "./static/illus2.png";
 import Illus3 from "./static/illus3.png";
 import Testi1 from "./static/testi1.png";
-import Prof from "./static/prof.png";
-import Comment from "./static/comment.png";
-import Comment2 from "./static/comment2.png";
+import "./css/mods.css";
 
 export function LowMod() {
   return <div></div>;
@@ -48,7 +46,7 @@ export function CustMod() {
 
           {/* <img src={Testi2} id="carousel1" /> */}
           <br />
-          <div style={{ margin: "50px 0px" }}>
+          <div className="customer-testimony">
             <span
               style={{
                 fontStyle: "italic",
