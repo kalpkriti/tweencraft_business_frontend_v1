@@ -1,4 +1,6 @@
 import React from "react";
+import whatsapp from "./static/whatsapp.png";
+import phone from "./static/phone.png";
 
 export default function Footer() {
   return (
@@ -83,9 +85,16 @@ export default function Footer() {
             Contact Us
             <br />
             <br />
-            Direct Call: +918744032032
+            <img
+              src={phone}
+              height="30px"
+              width="30px"
+              style={{ marginLeft: "10px", marginRight: "10px" }}
+            />
+            +918744032032
             <br />
-            WhatsApp No: +918105942244
+            <img src={whatsapp} height="50px" width="50px" />
+            +918105942244
             <br />
             ad@kalpkriti.com
             <br />

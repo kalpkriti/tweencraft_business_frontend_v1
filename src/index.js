@@ -4,6 +4,9 @@ import Routes from "./routes.js";
 import Search from "./search";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import * as firebase from "firebase";
+import phone from "./static/phone.png";
+import phonewhite from "./static/phonewhite.png";
+import whatsapp from "./static/whatsapp.png";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDfmo9gvcduofuICYbvTz3Doje3agpKVsA",
@@ -85,11 +88,13 @@ export function BootNav() {
             Contact
           </Nav.Link>
         </Nav>
-        <Nav.Link href="/login" className="text-dark">
-          WhatsApp: +918105942244
+        <Nav.Link href="/#" className="text-dark">
+          <img src={whatsapp} height="50px" width="60px" />
+          +918105942244
         </Nav.Link>
-        <Nav.Link href="/login" className="text-dark">
-          Phone: +918744032032
+        <Nav.Link href="/#" className="text-dark">
+          <img src={phone} height="30px" width="30px" />
+          +918744032032
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>
@@ -154,10 +159,12 @@ export function BootNavWhite() {
         </Nav>
 
         <Nav.Link href="#" id="white">
-          WhatsApp: +918105942244
+          <img src={whatsapp} height="50px" width="60px" />
+          +918105942244
         </Nav.Link>
         <Nav.Link href="#" id="white">
-          Phone: +918744032032
+          <img src={phonewhite} height="30px" width="30px" />
+          +918744032032
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>

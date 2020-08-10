@@ -127,7 +127,7 @@ export default function Sample() {
 
       <br />
 
-      <div className="search-pos">
+      <div className="search-pos" style={{ zIndex: "1" }}>
         <Search />
       </div>
       <div className="col lang-drop">
