@@ -39,10 +39,10 @@ export default function Cards() {
               <div className="mb-4">
                 <span className="h5">Free Video Revisions</span>
                 <br />
-                <span className="">1</span>
+                <span className="">2</span>
               </div>
               <div className="mb-4">
-                <span className="h5">Character</span>
+                <span className="h5">Characters</span>
                 <br />
                 <span className="">1</span>
               </div>
@@ -62,21 +62,27 @@ export default function Cards() {
                 <span className="">1 (Without Animation)</span>
               </div>
               <div className="mb-4">
-                <span className="h5">3 Video Packages (NA)</span>
+                <span className="h5">3 Video Packages </span>
                 <br />
-                <span className="">1 (Without Animation)</span>
+                <span className="">NA</span>
                 <br />
               </div>
               <div className="mb-4">
-                <span className="h5">5 Video Packages (NA)</span>
+                <span className="h5">5 Video Packages </span>
                 <br />
-                <span className="">1 (Without Animation)</span>
+                <span className="">NA</span>
                 <br />
               </div>
               <div className="mb-4">
                 <span className="h5">10 Video Packages (9000)</span>
                 <br />
-                <span className="">₹4000</span>
+                <span className="">₹4000 Advance</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Run your Ads on Kalpkriti </span>
+                <br />
+                <span className="">₹500</span>
+                <br />
               </div>
             </Card.Text>
             <br />
@@ -249,7 +255,7 @@ export default function Cards() {
               <div className="mb-4">
                 <span className="h5">Text</span>
                 <br />
-                <span className="">4 (Without Animation)</span>
+                <span className="">4 (With Animation)</span>
               </div>
               <div className="mb-4">
                 <span className="h5">3 Video Packages (₹3600)</span>
@@ -267,6 +273,12 @@ export default function Cards() {
                 <span className="h5">10 Video Packages (₹10000)</span>
                 <br />
                 <span className="">₹4000 Advance</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Run your Ads on Kalpkriti </span>
+                <br />
+                <span className="">₹500</span>
+                <br />
               </div>
             </Card.Text>
             <br />
@@ -306,7 +318,7 @@ export default function Cards() {
                 <span className="">7</span>
               </div>
               <div className="mb-4">
-                <span className="h5">Character</span>
+                <span className="h5">Characters</span>
                 <br />
                 <span className="">10</span>
               </div>
@@ -323,24 +335,30 @@ export default function Cards() {
               <div className="mb-4">
                 <span className="h5">Text</span>
                 <br />
-                <span className="">4 (Without Animation)</span>
+                <span className="">10 (With Animation)</span>
               </div>
               <div className="mb-4">
-                <span className="h5">3 Video Packages (₹3600)</span>
+                <span className="h5">3 Video Packages (₹5100)</span>
                 <br />
-                <span className="">₹1500 Advance</span>
-                <br />
-              </div>
-              <div className="mb-4">
-                <span className="h5">5 Video Packages (₹5500)</span>
-                <br />
-                <span className="">₹2200 Advance</span>
+                <span className="">₹2000 Advance</span>
                 <br />
               </div>
               <div className="mb-4">
-                <span className="h5">10 Video Packages (₹10000)</span>
+                <span className="h5">5 Video Packages (₹7500)</span>
                 <br />
-                <span className="">₹4000 Advance</span>
+                <span className="">₹3000 Advance</span>
+                <br />
+              </div>
+              <div className="mb-4">
+                <span className="h5">10 Video Packages (₹14000)</span>
+                <br />
+                <span className="">₹5500 Advance</span>
+              </div>
+              <div className="mb-4">
+                <span className="h5">Run your Ads on Kalpkriti </span>
+                <br />
+                <span className="">Free</span>
+                <br />
               </div>
             </Card.Text>
             <br />
@@ -363,7 +381,7 @@ export default function Cards() {
       <center>
         <div style={{ width: "50%" }}>
           <span className="lead">
-            T&C
+            <strong>Terms & Conditions</strong>
             <br />
             <br />
             * Customer will have to provide all the images
