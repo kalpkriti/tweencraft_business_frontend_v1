@@ -4,9 +4,6 @@ import Routes from "./routes.js";
 import Search from "./search";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import * as firebase from "firebase";
-import phone from "./static/phone.png";
-import phonewhite from "./static/phonewhite.png";
-import whatsapp from "./static/whatsapp.png";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDfmo9gvcduofuICYbvTz3Doje3agpKVsA",
@@ -67,7 +64,7 @@ export function BootNav() {
         id="basic-navbar-nav"
         style={{ backgroundColor: "white" }}
       >
-        <Nav className="mx-auto">
+        <Nav className="mx-auto"> 
           <Nav.Link
             href="/sample"
             className="mx-4"
@@ -75,26 +72,26 @@ export function BootNav() {
           >
             Sample
           </Nav.Link>
-          <Nav.Link href="/how-it-works" className="mx-4">
+          <Nav.Link href="/how-it-works" className="mx-40"
+          hover={{ color: "green" }}
+          >
             How it Works
           </Nav.Link>
-          <Nav.Link href="/pricing" className="mx-4">
+          <Nav.Link href="/pricing" className="mx-41">
             Pricing
           </Nav.Link>
-          <Nav.Link href="/aboutus" className="mx-4">
+          <Nav.Link href="/aboutus" className="mx-42">
             About Us
           </Nav.Link>
-          <Nav.Link href="/contact" className="mx-4">
+          <Nav.Link href="/contact" className="mx-43">
             Contact
           </Nav.Link>
-        </Nav>
-        <Nav.Link href="/#" className="text-dark">
-          <img src={whatsapp} height="50px" width="60px" />
-          +918105942244
+          </Nav>
+        <Nav.Link href="/login" className="text-dark">
+          WhatsApp: +918105942244
         </Nav.Link>
-        <Nav.Link href="/#" className="text-dark">
-          <img src={phone} height="30px" width="30px" />
-          +918744032032
+        <Nav.Link href="/login" className="text-dark">
+          Phone: +918744032032
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>
@@ -144,27 +141,28 @@ export function BootNavWhite() {
           <Nav.Link href="/sample" className="mx-4" id="white">
             Sample
           </Nav.Link>
-          <Nav.Link href="/how-it-works" className="mx-4" id="white">
+          <Nav.Link href="/how-it-works" className="mx-40" id="white">
             How it Works
           </Nav.Link>
-          <Nav.Link href="/pricing" className="mx-4" id="white">
+          <Nav.Link href="/pricing" className="mx-41" id="white">
             Pricing
           </Nav.Link>
-          <Nav.Link href="/aboutus" className="mx-4" id="white">
+          <Nav.Link href="/aboutus" className="mx-42" id="white">
             About Us
           </Nav.Link>
-          <Nav.Link href="/contact" className="mx-4" id="white">
+          <Nav.Link href="/contact" className="mx-43" id="white">
             Contact
           </Nav.Link>
         </Nav>
+        <Nav.Link href="#" className="login" id="white">
+          Login
+        </Nav.Link>
 
         <Nav.Link href="#" id="white">
-          <img src={whatsapp} height="50px" width="60px" />
-          +918105942244
+          WhatsApp: +918105942244
         </Nav.Link>
         <Nav.Link href="#" id="white">
-          <img src={phonewhite} height="30px" width="30px" />
-          +918744032032
+          Phone: +918744032032
         </Nav.Link>
       </Navbar.Collapse>
     </Navbar>

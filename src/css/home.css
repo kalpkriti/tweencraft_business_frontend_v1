@@ -1,10 +1,10 @@
 .home-how {
   position: absolute;
 
-  width: 1440px;
+  /* width: 1440px;
   height: 1204px;
 
-  top: 4950px;
+  top: 4950px; */
 }
 
 .home-heading-pos {
@@ -48,50 +48,15 @@
   margin-bottom: 50px;
 }
 
-.feature-head {
-  font-family: Mart;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
-  /* or 150% */
-
-  text-align: center;
-  letter-spacing: 0.4px;
-
-  color: #393f42;
-}
-
-.feature-head-pos {
-  width: 602px;
-}
-
 @media (max-width: 454px) {
   .home-how {
     position: absolute;
-    width: 320px;
+    /* width: 320px;
     height: 1204px;
 
-    top: 8050px;
+    top: 8050px; */
   }
 
-  .feature-head {
-    font-family: Mart;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 34px;
-    /* or 142% */
-
-    text-align: center;
-    letter-spacing: 0.4px;
-
-    color: #393f42;
-  }
-
-  .feature-head-pos {
-    width: 280px;
-  }
   .home-head {
     font-family: Mart;
     font-style: normal;
