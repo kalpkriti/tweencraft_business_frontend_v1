@@ -3,16 +3,32 @@
 /*-------------------------------------Props--------------------------------*/
 
 .heading {
+left: 13.89%;
+right: 50.42%;
+top: 20.35%;
+bottom: 78.21%;
+
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 50px;
+/* or 167% */
+
+letter-spacing: 0.4px;
+
+color: #393F42;
+
   /* position: absolute;
   left: 35.28%;
   right: 35.28%;
   top: 5.67%;
-  bottom: 90.77%; */
+  bottom: 90.77%;*/ 
 
-  font-family: Mart;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 60px;
   /* or 150% */
 
@@ -23,7 +39,7 @@
 }
 
 .elem2 {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -38,7 +54,7 @@
 .small-text {
   /* Burger Menu */
 
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -57,12 +73,7 @@
 /*---------------------------------Home------------------------------------------------*/
 
 .home-how {
-  position: absolute;
-
-  width: 1440px;
-  height: 1204px;
-
-  top: 4950px;
+  position: relative; /*changed*/
 }
 
 .home-heading-pos {
@@ -71,7 +82,7 @@
 }
 
 .home-head {
-  font-family: Mart;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 50px;
@@ -85,7 +96,7 @@
 }
 
 .home-head-2 {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -106,15 +117,15 @@
 
 @media (max-width: 454px) {
   .home-how {
-    position: absolute;
-    width: 320px;
+    position: relative; /*changed*/
+    /* width: 320px;
     height: 1204px;
 
-    top: 8050px;
+    top: 8050px; */
   }
 
   .home-head {
-    font-family: Mart;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -133,7 +144,7 @@
   }
 
   .home-head-2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -168,7 +179,7 @@
   box-shadow: 0px 2px 6px rgba(40, 39, 43, 0.06);
   border-radius: 10px;
 
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -183,6 +194,38 @@
   width: 280px;
   height: 190px;
   margin: 5px 5px;
+}
+/*changed*/
+
+.mx-4:hover {
+  font-size: 110%;
+  position: relative;
+}
+.mx-40:hover {
+  font-size: 110%;
+  position: relative;
+}
+.mx-41:hover {
+  font-size: 110%;
+  position: relative;
+}
+.mx-42:hover {
+  font-size: 110%;
+  position: relative;
+}
+.mx-43:hover {
+  font-size: 110%;
+  position: relative;
+}
+
+/*changed
+.change the sample color:hover {
+  background-color: #aab318;
+  font-size: 120%;
+}*/
+.sample-pos:hover{
+  background-color: #aab318;
+  font-size: 100%;
 }
 
 #dropdown-basic:hover,
@@ -201,7 +244,7 @@
   box-shadow: 0px 2px 6px rgba(40, 39, 43, 0.06);
   border-radius: 10px;
 
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -244,7 +287,7 @@
 }
 
 .small-tab-text {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -273,9 +316,35 @@
   border-width: 1.6px;
   border-color: #aab318;
 }
-
+.small-tab-text:hover{
+  font-size: 120%;
+}
 #carousel1 {
   width: 100%;
+}
+/*changed*/
+.btn-primary:hover{
+  font-size: 150%;
+}
+/*changed*/
+.px-5:hover{
+  font-size: 120%;
+}
+/*changed*/
+/*.mx-auto:hover{
+   font-size: 120%; 
+}*/
+/*changed*/
+.mx-2:hover{
+  background-color: #dbdbd3;
+}
+.mx-2{
+  font-family: 'Montserrat';
+  transition: 0.3s;
+}
+.mx-3{
+  border-radius: 5px  5px 0 0;
+  padding: 2px 16px;
 }
 
 #tabs1 {
@@ -343,9 +412,9 @@
 
 @media (max-width: 454px) {
   .heading {
-    font-family: Mart;
+    font-family: sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     /* or 142% */
@@ -356,7 +425,7 @@
 
   #white {
     color: white;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -418,7 +487,7 @@
 }
 
 .small-orange-text {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -455,7 +524,7 @@
 }
 
 #footer-head {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -467,4 +536,39 @@
   color: #28272b;
 
   mix-blend-mode: normal;
+}
+.ad-head{
+font-family: sans-serif;
+}
+.contact-head-title{
+  font-family: 'Montserrat'; 
+}
+.cont-form-button{
+  font-family: 'Montserrat';
+}
+
+.btn.btn-primary.btn-lg.ad-button-pos{
+  font-family: 'Montserrat';
+}
+.py-5{
+  font-family: 'Montserrat';
+  background-image: linear-gradient(180deg, #F8F8F8 -0.31%, #FFFFFF 52.09%);
+}
+.heading.text-center{
+  left: 29.17%;
+right: 29.03%;
+top: 16.88%;
+bottom: 81.4%;
+
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+/* or 150% */
+
+text-align: center;
+letter-spacing: 0.4px;
+
+color: #393F42;
 }

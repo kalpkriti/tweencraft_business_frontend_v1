@@ -151,14 +151,9 @@ function Home() {
         Features
       </div>
       <br />
-      <div className="d-flex justify-content-center">
-        <h2
-          className="feature-head feature-head-pos "
-          style={{ marginTop: "30px" }}
-        >
-          Use kalpkriti to drive growth at your business
-        </h2>
-      </div>
+      <h2 className="heading text-center" style={{ marginTop: "30px" }}>
+        Use kalpkriti to drive growth at your business
+      </h2>
       <br />
       <br />
       <br />
